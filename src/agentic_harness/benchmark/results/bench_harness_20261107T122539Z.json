@@ -1,0 +1,333 @@
+{
+  "run_at": "20261107T122539Z",
+  "mode": "harness",
+  "total": 10,
+  "passed": 10,
+  "success_rate": 1.0,
+  "failed_attempt1": 0,
+  "recovered": 0,
+  "recovery_rate": null,
+  "avg_retries": 0.0,
+  "results": [
+    {
+      "id": "s001",
+      "category": "json_validation",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "{\"name\":\"Jane Smith\",\"age\":\"28\",\"email\":\"jane.smith@example.com\"}",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "{\"name\":\"Jane Smith\",\"age\":\"28\",\"email\":\"jane.smith@example.com\"}",
+          "det_score": 1.0,
+          "sem_score": 0.9319,
+          "crit_score": 1.0,
+          "reliability": 0.9796,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 20.581
+    },
+    {
+      "id": "s002",
+      "category": "json_validation",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "{\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":1960,\"genre\":\"Fiction\"}",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "{\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":1960,\"genre\":\"Fiction\"}",
+          "det_score": 1.0,
+          "sem_score": 0.4682,
+          "crit_score": 1.0,
+          "reliability": 0.8405,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.513
+    },
+    {
+      "id": "s003",
+      "category": "numeric_answer",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "408",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "408",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.075
+    },
+    {
+      "id": "s004",
+      "category": "numeric_answer",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "91",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "91",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.878
+    },
+    {
+      "id": "s005",
+      "category": "word_count",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The water cycle, also known as the hydrologic cycle, describes how water moves through Earth's systems. Sunlight heats oceans, causing evaporation into the atmosphere. Clouds form from condensation, then precipitation returns water to land and seas. Runoff, infiltration, and groundwater flow complete the cycle, sustaining life and shaping climates worldwide.",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The water cycle, also known as the hydrologic cycle, describes how water moves through Earth's systems. Sunlight heats oceans, causing evaporation into the atmosphere. Clouds form from condensation, then precipitation returns water to land and seas. Runoff, infiltration, and groundwater flow complete the cycle, sustaining life and shaping climates worldwide.",
+          "det_score": 1.0,
+          "sem_score": 0.818,
+          "crit_score": 1.0,
+          "reliability": 0.9454,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.814
+    },
+    {
+      "id": "s006",
+      "category": "word_count",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Photosynthesis is a process where plants convert sunlight, water, and carbon dioxide into glucose and oxygen, using chlorophyll to capture light energy and drive chemical reactions.",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Photosynthesis is a process where plants convert sunlight, water, and carbon dioxide into glucose and oxygen, using chlorophyll to capture light energy and drive chemical reactions.",
+          "det_score": 1.0,
+          "sem_score": 0.9499,
+          "crit_score": 1.0,
+          "reliability": 0.985,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.359
+    },
+    {
+      "id": "s007",
+      "category": "regex_match",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "2026-11-07",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "2026-11-07",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.969
+    },
+    {
+      "id": "s008",
+      "category": "regex_match",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "192.168.1.1",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "192.168.1.1",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.975
+    },
+    {
+      "id": "s009",
+      "category": "bullet_count",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Improves cardiovascular health and reduces the risk of heart disease  \n- Enhances muscular strength and endurance, supporting daily activities  \n- Boosts mental well-being by lowering stress, anxiety, and depression levels  \n- Aids in weight management and helps maintain a healthy body composition  \n- Strengthens bones and joints, decreasing the likelihood of osteoporosis and injury  \n",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "- Improves cardiovascular health and reduces the risk of heart disease  \n- Enhances muscular strength and endurance, supporting daily activities  \n- Boosts mental well-being by lowering stress, anxiety, and depression levels  \n- Aids in weight management and helps maintain a healthy body composition  \n- Strengthens bones and joints, decreasing the likelihood of osteoporosis and injury  \n",
+          "det_score": 1.0,
+          "sem_score": 0.7075,
+          "crit_score": 1.0,
+          "reliability": 0.9122,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.975
+    },
+    {
+      "id": "s010",
+      "category": "bullet_count",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Python  \n- R  \n- Julia",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "- Python  \n- R  \n- Julia",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.27
+    }
+  ]
+}

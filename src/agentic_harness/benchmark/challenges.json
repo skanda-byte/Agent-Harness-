@@ -1,0 +1,3339 @@
+[
+  {
+    "id": "c001",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what photosynthesis is in one sentence. You must NOT use any of these words: plant, sun, light, green. The sentence must contain between 8 and 18 words.",
+    "reference_answer": "Chloroplasts synthesize vital carbohydrates by harvesting radiant stellar energy from the atmosphere.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "plant",
+          "sun",
+          "light",
+          "green"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c002",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what gravity is in one sentence. You must NOT use any of these words: fall, down, earth, drop. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Massive celestial objects exert an attractive force pulling surrounding bodies toward their centers.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "fall",
+          "down",
+          "earth",
+          "drop"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c003",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what computers is in one sentence. You must NOT use any of these words: screen, keyboard, code, device. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Electronic hardware executes calculated algorithmic operations to process vast streams of information.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "screen",
+          "keyboard",
+          "code",
+          "device"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c004",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Explain what democracy is in one sentence. You must NOT use any of these words: vote, election, ballot, leader. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Citizens participate directly in governance through collective consensus and institutional representation.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "vote",
+          "election",
+          "ballot",
+          "leader"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c005",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Explain what internet is in one sentence. You must NOT use any of these words: web, online, network, wire. The sentence must contain between 8 and 14 words.",
+    "reference_answer": "Global communication protocols distribute packets across interconnected servers worldwide.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "web",
+          "online",
+          "network",
+          "wire"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c006",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what music is in one sentence. You must NOT use any of these words: sound, song, instrument, listen. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Auditory harmonies structure acoustic frequencies into emotional patterns.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "sound",
+          "song",
+          "instrument",
+          "listen"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c007",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what automobile is in one sentence. You must NOT use any of these words: car, wheel, engine, drive. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Motorized passenger carriages navigate transportation roadways using internal combustion propulsion.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "car",
+          "wheel",
+          "engine",
+          "drive"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c008",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Explain what airplane is in one sentence. You must NOT use any of these words: fly, wing, sky, plane. The sentence must contain between 6 and 16 words.",
+    "reference_answer": "Pressurized aerodynamic cabins transport travelers across distant continents high above cloud layers.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "fly",
+          "wing",
+          "sky",
+          "plane"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c009",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Explain what medicine is in one sentence. You must NOT use any of these words: drug, doctor, pill, cure. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Therapeutic clinical treatments restore physiological balance and alleviate suffering.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "drug",
+          "doctor",
+          "pill",
+          "cure"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c010",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Explain what telescope is in one sentence. You must NOT use any of these words: star, look, space, eye. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Optical lenses magnify distant galactic formations for astronomical documentation.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "star",
+          "look",
+          "space",
+          "eye"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c011",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining the water cycle without using any commas.",
+    "reference_answer": "Solar heat evaporates liquid oceans into vapor. Clouds form when moisture condenses aloft. Precipitation returns freshwater to rivers and soil.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c012",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining cellular respiration without using any commas.",
+    "reference_answer": "Cells consume glucose to generate biochemical energy. Mitochondria drive this fundamental metabolic reaction. Carbon dioxide is released as an outcome.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c013",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining Newton's first law without using any commas.",
+    "reference_answer": "Objects in motion maintain their continuous trajectory. Stationary bodies remain resting until an external force interferes. Inertia governs this fundamental physical reality.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c014",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences explaining tectonic motion without using any commas.",
+    "reference_answer": "Rigid crustal slabs drift atop molten mantle layers. Colliding boundaries uplift massive mountain ridges. Continental landmasses slowly rearrange across geological eras.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c015",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences explaining deep space exploration without using any commas.",
+    "reference_answer": "Robotic probes venture beyond planetary orbits. Distant radio signals beam discoveries back home. Humanity expands its scientific frontiers steadily.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c016",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining ecosystem biodiversity without using any commas.",
+    "reference_answer": "Diverse species stabilize natural environments. Interdependent organisms balance local nutrient cycles. Habitat destruction threatens fragile food webs everywhere.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c017",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining cryptography basics without using any commas.",
+    "reference_answer": "Ciphers conceal sensitive messages from unauthorized observers. Mathematical keys lock and unlock digital text. Security protects contemporary digital communication channels.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c018",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences explaining stellar life cycles without using any commas.",
+    "reference_answer": "Protostars ignite hydrogen fusion within dense nebulae. Mature stars balance immense gravitational collapse. Supernovae disperse heavy cosmic elements across galaxies.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c019",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences explaining oceanic currents without using any commas.",
+    "reference_answer": "Thermohaline circulation channels heat across international waters. Prevailing winds guide surface tidal drifts. Marine ecosystems depend upon nutrient upwelling.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c020",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences explaining quantum behavior without using any commas.",
+    "reference_answer": "Subatomic particles exhibit simultaneous wave and particle characteristics. Measurement collapses indeterminate probabilistic states immediately. Entanglement links distant particles instantly.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c021",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about microservices benefits. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Independent scaling of components\n* Decoupled deployment pipelines\n* Fault isolation across boundaries\n* Polyglot technology selection",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c022",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about clean code principles. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Meaningful variable identifiers\n* Small focused functions\n* Comprehensive automated tests\n* Clear modular abstraction",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c023",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about agile sprint phases. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Sprint planning session\n* Daily standup synchronization\n* Iterative feature development\n* Sprint retrospective review",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c024",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "List exactly 4 distinct points about cybersecurity hygiene rules. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Enforce multifactor authentication\n* Apply routine software patches\n* Maintain isolated offline backups\n* Conduct regular access audits",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c025",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "List exactly 4 distinct points about data normalization advantages. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Elimination of redundant fields\n* Improved data consistency\n* Reduced anomalies on update\n* Optimized database storage footprint",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c026",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about cloud architecture pillars. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Operational excellence practices\n* Robust data encryption\n* Automated elasticity configurations\n* Proactive cost management",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c027",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about distributed caching strategies. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Cache aside pattern\n* Read through caching\n* Write through synchronization\n* Time to live expirations",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c028",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "List exactly 4 distinct points about machine learning pipelines. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Raw data ingestion\n* Automated feature engineering\n* Model parameter optimization\n* Continuous validation telemetry",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c029",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "List exactly 4 distinct points about REST API guidelines. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Stateless request handling\n* Standard HTTP verbs\n* Predictable status responses\n* Hierarchical resource URIs",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c030",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "List exactly 4 distinct points about CI/CD best practices. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Fast deterministic test runs\n* Immutable build artifacts\n* Automated rollback triggers\n* Comprehensive observability logs",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c031",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'STATUS:'. The total output must have between 12 and 16 words.",
+    "reference_answer": "STATUS: System latency remains nominal across all edge servers with zero errors.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "STATUS:"
+      }
+    }
+  },
+  {
+    "id": "c032",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'ALERT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "ALERT: Database memory utilization exceeded critical threshold on replica node three.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "ALERT:"
+      }
+    }
+  },
+  {
+    "id": "c033",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'NOTE:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "NOTE: Scheduled maintenance begins at midnight UTC and lasts exactly two hours.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "NOTE:"
+      }
+    }
+  },
+  {
+    "id": "c034",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Output an operational status line starting strictly with 'CONFIRM:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "CONFIRM: All production deployment validation health checks passed without any regressions.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "CONFIRM:"
+      }
+    }
+  },
+  {
+    "id": "c035",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Output an operational status line starting strictly with 'METRIC:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "METRIC: Weekly active customer engagement increased fourteen percent following recent release.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "METRIC:"
+      }
+    }
+  },
+  {
+    "id": "c036",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'AUDIT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "AUDIT: Access permissions for temporary contractor accounts were revoked as scheduled.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "AUDIT:"
+      }
+    }
+  },
+  {
+    "id": "c037",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'REPORT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "REPORT: Quarterly sales targets across European regions exceeded previous historical benchmarks.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "REPORT:"
+      }
+    }
+  },
+  {
+    "id": "c038",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "Output an operational status line starting strictly with 'WARNING:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "WARNING: Upstream payment gateway timeout rate reached two percent during peak load.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c039",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Output an operational status line starting strictly with 'DISPATCH:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "DISPATCH: Emergency maintenance crew arrived on site to inspect fiber optic lines.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "DISPATCH:"
+      }
+    }
+  },
+  {
+    "id": "c040",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "Output an operational status line starting strictly with 'TELEMETRY:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "TELEMETRY: Background queue processing completed one million tasks within five minutes.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "TELEMETRY:"
+      }
+    }
+  },
+  {
+    "id": "c041",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a microservice telemetry payload. It must strictly contain the following top-level keys: service, status, metrics.",
+    "reference_answer": "{\"service\": \"auth-service\", \"status\": \"healthy\", \"metrics\": {\"cpu\": 22.4, \"memory_mb\": 512, \"uptime_sec\": 86400}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "service",
+          "status",
+          "metrics"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c042",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a ecommerce order with shipping address. It must strictly contain the following top-level keys: order_id, customer, shipping_address, total_cents.",
+    "reference_answer": "{\"order_id\": \"ORD-9912\", \"customer\": \"Dana Scully\", \"shipping_address\": {\"street\": \"123 Main\", \"city\": \"DC\", \"zip\": \"20001\"}, \"total_cents\": 14900}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "order_id",
+          "customer",
+          "shipping_address",
+          "total_cents"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c043",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a CI pipeline build artifact descriptor. It must strictly contain the following top-level keys: build_id, commit_sha, artifacts, passed.",
+    "reference_answer": "{\"build_id\": \"b-4491\", \"commit_sha\": \"7f8a91c\", \"artifacts\": [\"bin/app\", \"docs/api.json\"], \"passed\": true}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "build_id",
+          "commit_sha",
+          "artifacts",
+          "passed"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c044",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a cloud security IAM policy. It must strictly contain the following top-level keys: version, statement, role_arn.",
+    "reference_answer": "{\"version\": \"2026-10-17\", \"statement\": {\"effect\": \"Allow\", \"action\": \"s3:*\"}, \"role_arn\": \"arn:aws:iam::123:role/App\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "version",
+          "statement",
+          "role_arn"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c045",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a machine learning model registry entry. It must strictly contain the following top-level keys: model_name, version, hyperparameters, accuracy.",
+    "reference_answer": "{\"model_name\": \"fraud_detector\", \"version\": \"2.4.0\", \"hyperparameters\": {\"lr\": 0.001, \"epochs\": 50}, \"accuracy\": 0.984}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "model_name",
+          "version",
+          "hyperparameters",
+          "accuracy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c046",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a database replication status. It must strictly contain the following top-level keys: primary_node, replicas, lag_seconds, sync_mode.",
+    "reference_answer": "{\"primary_node\": \"pg-01\", \"replicas\": [\"pg-02\", \"pg-03\"], \"lag_seconds\": 0.05, \"sync_mode\": \"streaming\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "primary_node",
+          "replicas",
+          "lag_seconds",
+          "sync_mode"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c047",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a IoT sensor environmental reading. It must strictly contain the following top-level keys: device_id, sensor_type, reading, timestamp_iso.",
+    "reference_answer": "{\"device_id\": \"temp-sensor-09\", \"sensor_type\": \"thermocouple\", \"reading\": {\"celsius\": 21.5, \"humidity_pct\": 45}, \"timestamp_iso\": \"2026-11-07T12:00:00Z\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "device_id",
+          "sensor_type",
+          "reading",
+          "timestamp_iso"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c048",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a user session authentication token. It must strictly contain the following top-level keys: session_id, user_id, claims, expires_at.",
+    "reference_answer": "{\"session_id\": \"sess-xyz\", \"user_id\": \"usr-8812\", \"claims\": {\"role\": \"admin\", \"org\": \"acme\"}, \"expires_at\": 1799999999}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "session_id",
+          "user_id",
+          "claims",
+          "expires_at"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c049",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a API gateway route configuration. It must strictly contain the following top-level keys: path, upstream_service, rate_limit, cors.",
+    "reference_answer": "{\"path\": \"/v1/users\", \"upstream_service\": \"user-backend:3000\", \"rate_limit\": {\"rpm\": 1000}, \"cors\": {\"enabled\": true}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "path",
+          "upstream_service",
+          "rate_limit",
+          "cors"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c050",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a financial trade execution message. It must strictly contain the following top-level keys: trade_id, symbol, execution, counterparty.",
+    "reference_answer": "{\"trade_id\": \"TRD-7721\", \"symbol\": \"AAPL\", \"execution\": {\"shares\": 500, \"price\": 225.5}, \"counterparty\": \"BANK-A\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "trade_id",
+          "symbol",
+          "execution",
+          "counterparty"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c051",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a kubernetes pod status object. It must strictly contain the following top-level keys: pod_name, namespace, containers, restart_count.",
+    "reference_answer": "{\"pod_name\": \"web-7df88-lk2\", \"namespace\": \"prod\", \"containers\": [{\"name\": \"web\", \"image\": \"v1.2\"}], \"restart_count\": 0}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "pod_name",
+          "namespace",
+          "containers",
+          "restart_count"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c052",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a weather station telemetry packet. It must strictly contain the following top-level keys: station_code, coordinates, atmospheric_pressure_hpa, wind.",
+    "reference_answer": "{\"station_code\": \"STN-DEN-01\", \"coordinates\": {\"lat\": 39.7392, \"lon\": -104.9903}, \"atmospheric_pressure_hpa\": 1013.2, \"wind\": {\"speed_knots\": 12, \"dir\": \"NW\"}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "station_code",
+          "coordinates",
+          "atmospheric_pressure_hpa",
+          "wind"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c053",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Generate a valid JSON object representing a video streaming transcode profile. It must strictly contain the following top-level keys: profile_name, codecs, resolutions, bitrate_kbps.",
+    "reference_answer": "{\"profile_name\": \"adaptive_hls\", \"codecs\": {\"video\": \"h264\", \"audio\": \"aac\"}, \"resolutions\": [\"1080p\", \"720p\"], \"bitrate_kbps\": 4500}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "profile_name",
+          "codecs",
+          "resolutions",
+          "bitrate_kbps"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c054",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a medical laboratory test result. It must strictly contain the following top-level keys: patient_id, test_code, panels, flagged.",
+    "reference_answer": "{\"patient_id\": \"PT-3392\", \"test_code\": \"CBC-01\", \"panels\": {\"wbc\": 6.5, \"rbc\": 4.8}, \"flagged\": false}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "patient_id",
+          "test_code",
+          "panels",
+          "flagged"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c055",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Generate a valid JSON object representing a event streaming message envelope. It must strictly contain the following top-level keys: event_id, topic, headers, payload.",
+    "reference_answer": "{\"event_id\": \"ev-8819\", \"topic\": \"orders.created\", \"headers\": {\"trace_id\": \"tr-102\"}, \"payload\": {\"order_id\": 99}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "event_id",
+          "topic",
+          "headers",
+          "payload"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c056",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a DNS zone record specification. You must include these exact keys: domain, records, ttl_seconds.",
+    "reference_answer": "{\"domain\": \"example.com\", \"records\": [{\"type\": \"A\", \"val\": \"1.1.1.1\"}], \"ttl_seconds\": 3600}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "domain",
+          "records",
+          "ttl_seconds"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c057",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a OAuth2 client registration. You must include these exact keys: client_id, redirect_uris, grant_types.",
+    "reference_answer": "{\"client_id\": \"cli-123\", \"redirect_uris\": [\"https://app/callback\"], \"grant_types\": [\"auth_code\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "client_id",
+          "redirect_uris",
+          "grant_types"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c058",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a database migration manifest. You must include these exact keys: migration_id, up_sql, down_sql.",
+    "reference_answer": "{\"migration_id\": \"002_add_index\", \"up_sql\": \"CREATE INDEX ...\", \"down_sql\": \"DROP INDEX ...\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "migration_id",
+          "up_sql",
+          "down_sql"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c059",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a log analytics filter rule. You must include these exact keys: rule_name, query, severity_threshold.",
+    "reference_answer": "{\"rule_name\": \"high_error_rate\", \"query\": \"status >= 500\", \"severity_threshold\": \"CRITICAL\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "rule_name",
+          "query",
+          "severity_threshold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c060",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a package dependency lockfile excerpt. You must include these exact keys: package_name, resolved_version, integrity_hash.",
+    "reference_answer": "{\"package_name\": \"pydantic\", \"resolved_version\": \"2.8.2\", \"integrity_hash\": \"sha256-abc\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "package_name",
+          "resolved_version",
+          "integrity_hash"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c061",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a GPU compute cluster node metrics. You must include these exact keys: node_id, gpu_utilization_pct, temperature_celsius.",
+    "reference_answer": "{\"node_id\": \"gpu-node-04\", \"gpu_utilization_pct\": 89.5, \"temperature_celsius\": 71}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "node_id",
+          "gpu_utilization_pct",
+          "temperature_celsius"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c062",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a autonomous vehicle lidar scan frame. You must include these exact keys: frame_id, point_count, calibration.",
+    "reference_answer": "{\"frame_id\": \"f-109283\", \"point_count\": 128000, \"calibration\": {\"yaw\": 0.0}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "frame_id",
+          "point_count",
+          "calibration"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c063",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a payment split configuration. You must include these exact keys: merchant_id, splits, currency.",
+    "reference_answer": "{\"merchant_id\": \"m-882\", \"splits\": [{\"partner\": \"p1\", \"share\": 0.15}], \"currency\": \"USD\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "merchant_id",
+          "splits",
+          "currency"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c064",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a backup storage lifecycle rule. You must include these exact keys: bucket, transition_days, glacier_archive.",
+    "reference_answer": "{\"bucket\": \"corp-backups\", \"transition_days\": 30, \"glacier_archive\": true}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "bucket",
+          "transition_days",
+          "glacier_archive"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c065",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a customer credit assessment report. You must include these exact keys: applicant_id, credit_score, risk_category.",
+    "reference_answer": "{\"applicant_id\": \"APP-99120\", \"credit_score\": 765, \"risk_category\": \"LOW\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "applicant_id",
+          "credit_score",
+          "risk_category"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c066",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a search index shard allocation. You must include these exact keys: index_name, shard_id, replica_nodes.",
+    "reference_answer": "{\"index_name\": \"products_v2\", \"shard_id\": 3, \"replica_nodes\": [\"node-2\", \"node-5\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "index_name",
+          "shard_id",
+          "replica_nodes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c067",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a webhook dispatch payload. You must include these exact keys: target_url, attempt_number, payload_body.",
+    "reference_answer": "{\"target_url\": \"https://hooks/alert\", \"attempt_number\": 1, \"payload_body\": {\"event\": \"ping\"}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "target_url",
+          "attempt_number",
+          "payload_body"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c068",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON document representing a inventory replenishment trigger. You must include these exact keys: warehouse_id, reorder_skus, supplier_id.",
+    "reference_answer": "{\"warehouse_id\": \"WH-WEST-01\", \"reorder_skus\": [\"SKU-1\", \"SKU-2\"], \"supplier_id\": \"SUP-99\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "warehouse_id",
+          "reorder_skus",
+          "supplier_id"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c069",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a microfrontend remotes registry. You must include these exact keys: app_name, remote_entry_url, shared_dependencies.",
+    "reference_answer": "{\"app_name\": \"checkout_mfe\", \"remote_entry_url\": \"/remoteEntry.js\", \"shared_dependencies\": [\"react\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "app_name",
+          "remote_entry_url",
+          "shared_dependencies"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c070",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "Return ONLY a JSON document representing a SSL certificate inspection report. You must include these exact keys: domain_name, issuer, valid_until_epoch.",
+    "reference_answer": "{\"domain_name\": \"secure.bank.com\", \"issuer\": \"DigiCert\", \"valid_until_epoch\": 1893456000}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "domain_name",
+          "issuer",
+          "valid_until_epoch"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c071",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A submarine at 450 feet below sea level ascends 180 feet, then descends 70 feet. What is its depth in feet below sea level? Reply with number only.",
+    "reference_answer": "340",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 340,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c072",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "The temperature in Anchorage was -12 degrees Fahrenheit at dawn. By noon it rose 19 degrees, but by midnight it fell 15 degrees. What was the midnight temperature? Reply with number only.",
+    "reference_answer": "-8",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": -8,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c073",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A bank account has a balance of $120. The owner writes a check for $150 and then deposits $80. What is the current balance in dollars? Reply with number only.",
+    "reference_answer": "50",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 50,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c074",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "A retail company had a net loss of $25,000 in Q1. In Q2 they made a profit of $40,000. In Q3 they lost $10,000. What was their total net profit or loss across the three quarters? Reply with number only.",
+    "reference_answer": "5000",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 5000,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c075",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "An elevator starts on floor 0 (ground). It goes down 3 floors to the basement parking, goes up 14 floors, then goes down 5 floors. What floor is it on now? Reply with number only.",
+    "reference_answer": "6",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 6,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c076",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A freezer temperature was set to -18 degrees Celsius. During a defrost cycle the temperature increased by 14 degrees, and then dropped back down by 10 degrees. What is the temperature now? Reply with number only.",
+    "reference_answer": "-14",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": -14,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c077",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A scuba diver starts at surface (0 meters). She dives down 28 meters, swims up 11 meters to explore a reef, then descends another 9 meters. What is her depth in meters? Reply with number only.",
+    "reference_answer": "26",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 26,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c078",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A merchant bought 50 lamps for $10 each. 10 lamps were broken and thrown away. The merchant sold the remaining lamps for $20 each. What was the net profit in dollars? Reply with number only.",
+    "reference_answer": "300",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 300,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c079",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "A car rental company charges $30 per day plus $0.20 per mile. If you rent a car for 3 days and drive 200 miles, what is the total cost in dollars? Reply with number only.",
+    "reference_answer": "130",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 130,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c080",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "A student scored 85, 90, and 75 on three exams. What score must the student get on the fourth exam to have an overall average of 85? Reply with number only.",
+    "reference_answer": "90",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 90,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c081",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "If a clock strikes 6 times in 5 seconds, how many seconds does it take to strike 12 times? Reply with the number only.",
+    "reference_answer": "11",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 11,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c082",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A tank can be filled by pipe A in 4 hours and emptied by pipe B in 6 hours. If both pipes are opened together, how many hours does it take to fill the tank? Reply with number only.",
+    "reference_answer": "12",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 12,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c083",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "A train 200 meters long traveling at 20 meters per second passes a stationary pole. How many seconds does it take the train to completely pass the pole? Reply with number only.",
+    "reference_answer": "10",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 10,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c084",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Two cyclists start 60 miles apart and ride towards each other, one at 12 mph and the other at 18 mph. How many hours until they meet? Reply with number only.",
+    "reference_answer": "2",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 2,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c085",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "A warehouse has 200 boxes. Day 1: 50% are shipped out. Day 2: 20 new boxes arrive. Day 3: 25% of the remaining boxes are shipped out. How many boxes remain? Reply with number only.",
+    "reference_answer": "90",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 90,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c086",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Generate a valid UUID version 4 in lowercase with hyphens (e.g. 123e4567-e89b-12d3-a456-426614174000). Output the UUID only.",
+    "reference_answer": "c9a646d3-9c61-4cc9-bc17-91a5390c9b0e",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+      }
+    }
+  },
+  {
+    "id": "c087",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Output a valid MAC-48 hardware address formatted with colons and uppercase hex digits (e.g. 00:1A:2B:3C:4D:5E). Output nothing else.",
+    "reference_answer": "A0:B1:C2:D3:E4:F5",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^[0-9A-F]{2}(:[0-9A-F]{2}){5}$"
+      }
+    }
+  },
+  {
+    "id": "c088",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Output a valid Semantic Versioning string with major, minor, patch and an optional pre-release tag (e.g. 2.1.0 or 1.0.0-alpha.1). Output only the version.",
+    "reference_answer": "3.14.1-beta.2",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\d+\\.\\d+\\.\\d+(-[0-9A-Za-z.-]+)?$"
+      }
+    }
+  },
+  {
+    "id": "c089",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Output an ISO-8601 UTC timestamp format (e.g. 2026-11-07T12:00:00Z). Output only the timestamp.",
+    "reference_answer": "2026-11-07T14:30:00Z",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+      }
+    }
+  },
+  {
+    "id": "c090",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Output a US telephone number in exact format (XXX) XXX-XXXX. Output only the number.",
+    "reference_answer": "(555) 867-5309",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\(\\d{3}\\) \\d{3}-\\d{4}$"
+      }
+    }
+  },
+  {
+    "id": "c091",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Output a valid 24-hour time string in HH:MM:SS format (e.g. 08:30:00). Output nothing else.",
+    "reference_answer": "19:45:00",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$"
+      }
+    }
+  },
+  {
+    "id": "c092",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Output a valid international bank IBAN for Germany starting with DE followed by 20 digits. Output only the code.",
+    "reference_answer": "DE89370400440532013000",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^DE\\d{20}$"
+      }
+    }
+  },
+  {
+    "id": "c093",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Output a valid credit card expiration date in MM/YY format. Output nothing else.",
+    "reference_answer": "08/29",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^(0[1-9]|1[0-2])\\/\\d{2}$"
+      }
+    }
+  },
+  {
+    "id": "c094",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Output a valid 5-digit US ZIP code followed by optional +4 extension (e.g. 90210 or 90210-1234). Output only the code.",
+    "reference_answer": "94107-1234",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\d{5}(-\\d{4})?$"
+      }
+    }
+  },
+  {
+    "id": "c095",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Output a CSS RGB color function string with integer values from 0 to 255 (e.g. rgb(255, 0, 128)). Output nothing else.",
+    "reference_answer": "rgb(34, 150, 240)",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^rgb\\(\\s*\\d{1,3}\\s*,\\s*\\d{1,3}\\s*,\\s*\\d{1,3}\\s*\\)$"
+      }
+    }
+  },
+  {
+    "id": "c096",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Write exactly 2 sentences about medical research, where the first sentence includes a quote.",
+    "reference_answer": "The lead researcher declared \"our findings exceed expectations\" during the symposium. Clinical verification trials commence across multiple regional hospitals next month.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c097",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Write exactly 3 sentences about a robotics startup company and their automated delivery systems.",
+    "reference_answer": "Robotics startup Aerofleet unveiled its automated quadcopter courier platform today. Commercial testing permits allow operations across designated suburban corridors. Customer satisfaction metrics reached ninety-four percent during initial trials.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 3
+      }
+    }
+  },
+  {
+    "id": "c098",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "Write exactly 2 sentences discussing trade logistics and modern cargo transport.",
+    "reference_answer": "Maritime freight vessels transport immense shipping containers across deep international waterways. Automated harbor cranes swiftly unload cargo pallets onto regional freight trains.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c099",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences describing a college laboratory founded in 1995.",
+    "reference_answer": "The university laboratory founded in 1995 continues producing groundbreaking material physics discoveries. Graduate students conduct complex nanotechnology experiments every afternoon. Industry partners regularly sponsor proprietary research grants there.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 3
+      }
+    }
+  },
+  {
+    "id": "c100",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "Write exactly 2 sentences describing an international satellite mission.",
+    "reference_answer": "The communications satellite established telemetry contact with ground stations in Australia. Orbital adjustments ensured optimal positioning above targeted longitudinal corridors.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c101",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: LIST 3 MODERN BACKEND LANGUAGES USING '-' BULLETS.",
+    "reference_answer": "- Python\n- Go\n- Rust",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 3,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "c102",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Could you please list three modern backend programming languages? Make sure each item is on its own bullet starting with '-'.",
+    "reference_answer": "- Python\n- Go\n- Rust",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 3,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "c103",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Per RFC-SPEC: The response MUST contain exactly three bulleted lines, each beginning with the hyphen character '-' denoting modern backend languages.",
+    "reference_answer": "- Python\n- Go\n- Rust",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 3,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "c104",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Imagine you are an engineering director briefing a new team. Enumerate exactly 3 modern backend languages using '-' bullet points.",
+    "reference_answer": "- Python\n- Go\n- Rust",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 3,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "c105",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "CMD: OUTPUT ACCEPTANCE LINE. MUST START WITH 'APPROVED:'.",
+    "reference_answer": "APPROVED: The proposed architectural migration plan meets all reliability requirements.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "APPROVED:"
+      }
+    }
+  },
+  {
+    "id": "c106",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Can you give me an approval message for our design? Please make sure your entire reply starts strictly with 'APPROVED:'.",
+    "reference_answer": "APPROVED: The proposed architectural migration plan meets all reliability requirements.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "APPROVED:"
+      }
+    }
+  },
+  {
+    "id": "c107",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "MANDATORY: Response string SHALL commence with prefix token 'APPROVED:' followed by architecture confirmation.",
+    "reference_answer": "APPROVED: The proposed architectural migration plan meets all reliability requirements.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "APPROVED:"
+      }
+    }
+  },
+  {
+    "id": "c108",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "As a lead security auditor, issue your final sign-off. Begin your statement strictly with 'APPROVED:'.",
+    "reference_answer": "APPROVED: The proposed architectural migration plan meets all reliability requirements.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "APPROVED:"
+      }
+    }
+  },
+  {
+    "id": "c109",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "CMD: DEFINE MACHINE LEARNING RISKS IN EXACTLY 2 SENTENCES.",
+    "reference_answer": "Machine learning models identify complex statistical correlations in massive datasets. Engineers must evaluate these models carefully to avoid unintended algorithmic bias.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c110",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Can you share a brief thought on machine learning risks? Write exactly two sentences.",
+    "reference_answer": "Machine learning models identify complex statistical correlations in massive datasets. Engineers must evaluate these models carefully to avoid unintended algorithmic bias.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c111",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "SPECIFICATION: Output SHALL comprise exactly 2 grammatical sentences analyzing machine learning risks.",
+    "reference_answer": "Machine learning models identify complex statistical correlations in massive datasets. Engineers must evaluate these models carefully to avoid unintended algorithmic bias.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c112",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Write a two-sentence reflection on artificial intelligence risks for a keynote presentation slide.",
+    "reference_answer": "Machine learning models identify complex statistical correlations in massive datasets. Engineers must evaluate these models carefully to avoid unintended algorithmic bias.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 2
+      }
+    }
+  },
+  {
+    "id": "c113",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: DUMP DATABASE CONNECTION JSON WITH KEYS: host, port.",
+    "reference_answer": "{\"host\": \"redis.internal\", \"port\": 6379}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "host",
+          "port"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c114",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Could you provide a sample database connection object in JSON? It needs to have 'host' and 'port' as keys.",
+    "reference_answer": "{\"host\": \"redis.internal\", \"port\": 6379}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "host",
+          "port"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c115",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "PAYLOAD SPEC: Return JSON object fulfilling schema with required keys: host, port.",
+    "reference_answer": "{\"host\": \"redis.internal\", \"port\": 6379}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "host",
+          "port"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c116",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Format connection credentials for a microservice in JSON with keys: host, port.",
+    "reference_answer": "{\"host\": \"redis.internal\", \"port\": 6379}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "host",
+          "port"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c117",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: SUMMARIZE FRESHWATER IMPORTANCE. LENGTH LIMIT: 25 TO 35 WORDS.",
+    "reference_answer": "Freshwater ecosystems support extraordinary biological diversity despite occupying less than one percent of Earth's total surface. Protecting vulnerable wetlands preserves essential natural water filtration and global ecological stability.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 35
+      }
+    }
+  },
+  {
+    "id": "c118",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Can you write a short blurb about why freshwater is important? Please keep it between 25 and 35 words long.",
+    "reference_answer": "Freshwater ecosystems support extraordinary biological diversity despite occupying less than one percent of Earth's total surface. Protecting vulnerable wetlands preserves essential natural water filtration and global ecological stability.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 35
+      }
+    }
+  },
+  {
+    "id": "c119",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "CONSTRAINT: Text body MUST satisfy word count inequality 25 <= N <= 35 describing freshwater ecology.",
+    "reference_answer": "Freshwater ecosystems support extraordinary biological diversity despite occupying less than one percent of Earth's total surface. Protecting vulnerable wetlands preserves essential natural water filtration and global ecological stability.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 35
+      }
+    }
+  },
+  {
+    "id": "c120",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Draft a short museum placard explaining freshwater conservation in 25 to 35 words.",
+    "reference_answer": "Freshwater ecosystems support extraordinary biological diversity despite occupying less than one percent of Earth's total surface. Protecting vulnerable wetlands preserves essential natural water filtration and global ecological stability.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 35
+      }
+    }
+  },
+  {
+    "id": "c121",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: WRITE 2 FACTS ABOUT THE UNIVERSE WITH ZERO COMMAS.",
+    "reference_answer": "Galaxies drift through expanding cosmic voids. Gravitational waves ripple outward from merging black holes.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c122",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Give me two quick facts about outer space, but do not use a single comma in your response.",
+    "reference_answer": "Galaxies drift through expanding cosmic voids. Gravitational waves ripple outward from merging black holes.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c123",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "SYNTAX RESTRICTION: The comma character ',' is strictly prohibited from the output string.",
+    "reference_answer": "Galaxies drift through expanding cosmic voids. Gravitational waves ripple outward from merging black holes.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c124",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Compose two declarative statements about the cosmos without utilizing any commas whatsoever.",
+    "reference_answer": "Galaxies drift through expanding cosmic voids. Gravitational waves ripple outward from merging black holes.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c125",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "CMD: EMIT THERMAL ALERT STARTING WITH 'WARNING:'.",
+    "reference_answer": "WARNING: High temperature detected in server rack four; thermal shutdown imminent.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c126",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "I need an urgent thermal notification. Make sure the message begins with 'WARNING:'.",
+    "reference_answer": "WARNING: High temperature detected in server rack four; thermal shutdown imminent.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c127",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "EMISSION RULE: Alert payload MUST open with literal string 'WARNING:'.",
+    "reference_answer": "WARNING: High temperature detected in server rack four; thermal shutdown imminent.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c128",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "In your capacity as datacenter facility monitor, trigger an alert beginning with 'WARNING:'.",
+    "reference_answer": "WARNING: High temperature detected in server rack four; thermal shutdown imminent.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c129",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "CMD: TRIANGLE BASE 12 HEIGHT 6. COMPUTE AREA. NUMBER ONLY.",
+    "reference_answer": "36",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 36,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c130",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "What is the area of a triangle that has a base of 12 and a height of 6? Please reply with just the number.",
+    "reference_answer": "36",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 36,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c131",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CALCULATION: Determine polygon area for base=12 and height=6. Emit numerical scalar only.",
+    "reference_answer": "36",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 36,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c132",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "A surveyor plots a triangular lot with base 12 meters and height 6 meters. State the area in square meters as a bare number.",
+    "reference_answer": "36",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 36,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c133",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: LIST 4 INNER PLANETS USING '*' BULLETS.",
+    "reference_answer": "* Mercury\n* Venus\n* Earth\n* Mars",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c134",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Could you list the four inner planets of our solar system? Use bullet points that start with '*' for each.",
+    "reference_answer": "* Mercury\n* Venus\n* Earth\n* Mars",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c135",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "SCHEMA: Provide exactly four bullet points with bullet prefix character '*' detailing inner terrestrial planets.",
+    "reference_answer": "* Mercury\n* Venus\n* Earth\n* Mars",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c136",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Prepare an astronomy syllabus entry enumerating the 4 inner planets using '*' bullet markers.",
+    "reference_answer": "* Mercury\n* Venus\n* Earth\n* Mars",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c137",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "CMD: EXPLAIN MODEL OPTIMIZATION. MUST CONTAIN: neural, weights, gradient.",
+    "reference_answer": "During training, neural architectures adjust internal weights through gradient descent optimization.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": [
+          "neural",
+          "weights",
+          "gradient"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c138",
+    "category": "paraphrased_variants",
+    "split": "tune",
+    "prompt": "Can you explain how machine learning models learn? You must include the words 'neural', 'weights', and 'gradient'.",
+    "reference_answer": "During training, neural architectures adjust internal weights through gradient descent optimization.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": [
+          "neural",
+          "weights",
+          "gradient"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c139",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "LEXICAL REQUIREMENT: The resulting response SHALL contain all tokens from the set {'neural', 'weights', 'gradient'}.",
+    "reference_answer": "During training, neural architectures adjust internal weights through gradient descent optimization.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": [
+          "neural",
+          "weights",
+          "gradient"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c140",
+    "category": "paraphrased_variants",
+    "split": "test",
+    "prompt": "Describe deep learning optimization to an engineering intern, making sure to reference neural, weights, and gradient.",
+    "reference_answer": "During training, neural architectures adjust internal weights through gradient descent optimization.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": [
+          "neural",
+          "weights",
+          "gradient"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c141",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 141] Explain what photosynthesis is in one sentence. You must NOT use any of these words: plant, sun, light, green. The sentence must contain between 8 and 18 words.",
+    "reference_answer": "Chloroplasts synthesize vital carbohydrates by harvesting radiant stellar energy from the atmosphere.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "plant",
+          "sun",
+          "light",
+          "green"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c142",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 142] Explain what gravity is in one sentence. You must NOT use any of these words: fall, down, earth, drop. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Massive celestial objects exert an attractive force pulling surrounding bodies toward their centers.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "fall",
+          "down",
+          "earth",
+          "drop"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c143",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 143] Explain what computers is in one sentence. You must NOT use any of these words: screen, keyboard, code, device. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Electronic hardware executes calculated algorithmic operations to process vast streams of information.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "screen",
+          "keyboard",
+          "code",
+          "device"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c144",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 144] Explain what democracy is in one sentence. You must NOT use any of these words: vote, election, ballot, leader. The sentence must contain between 8 and 16 words.",
+    "reference_answer": "Citizens participate directly in governance through collective consensus and institutional representation.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "vote",
+          "election",
+          "ballot",
+          "leader"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c145",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 145] Explain what internet is in one sentence. You must NOT use any of these words: web, online, network, wire. The sentence must contain between 8 and 14 words.",
+    "reference_answer": "Global communication protocols distribute packets across interconnected servers worldwide.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "web",
+          "online",
+          "network",
+          "wire"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c146",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 146] Explain what music is in one sentence. You must NOT use any of these words: sound, song, instrument, listen. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Auditory harmonies structure acoustic frequencies into emotional patterns.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "sound",
+          "song",
+          "instrument",
+          "listen"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c147",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 147] Explain what automobile is in one sentence. You must NOT use any of these words: car, wheel, engine, drive. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Motorized passenger carriages navigate transportation roadways using internal combustion propulsion.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "car",
+          "wheel",
+          "engine",
+          "drive"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c148",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 148] Explain what airplane is in one sentence. You must NOT use any of these words: fly, wing, sky, plane. The sentence must contain between 6 and 16 words.",
+    "reference_answer": "Pressurized aerodynamic cabins transport travelers across distant continents high above cloud layers.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "fly",
+          "wing",
+          "sky",
+          "plane"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c149",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 149] Explain what medicine is in one sentence. You must NOT use any of these words: drug, doctor, pill, cure. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Therapeutic clinical treatments restore physiological balance and alleviate suffering.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "drug",
+          "doctor",
+          "pill",
+          "cure"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c150",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 150] Explain what telescope is in one sentence. You must NOT use any of these words: star, look, space, eye. The sentence must contain between 6 and 14 words.",
+    "reference_answer": "Optical lenses magnify distant galactic formations for astronomical documentation.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": [
+          "star",
+          "look",
+          "space",
+          "eye"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c151",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 151] Write exactly 3 sentences explaining the water cycle without using any commas.",
+    "reference_answer": "Solar heat evaporates liquid oceans into vapor. Clouds form when moisture condenses aloft. Precipitation returns freshwater to rivers and soil.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c152",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 152] Write exactly 3 sentences explaining cellular respiration without using any commas.",
+    "reference_answer": "Cells consume glucose to generate biochemical energy. Mitochondria drive this fundamental metabolic reaction. Carbon dioxide is released as an outcome.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c153",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 153] Write exactly 3 sentences explaining Newton's first law without using any commas.",
+    "reference_answer": "Objects in motion maintain their continuous trajectory. Stationary bodies remain resting until an external force interferes. Inertia governs this fundamental physical reality.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c154",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 154] Write exactly 3 sentences explaining tectonic motion without using any commas.",
+    "reference_answer": "Rigid crustal slabs drift atop molten mantle layers. Colliding boundaries uplift massive mountain ridges. Continental landmasses slowly rearrange across geological eras.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c155",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 155] Write exactly 3 sentences explaining deep space exploration without using any commas.",
+    "reference_answer": "Robotic probes venture beyond planetary orbits. Distant radio signals beam discoveries back home. Humanity expands its scientific frontiers steadily.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c156",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 156] Write exactly 3 sentences explaining ecosystem biodiversity without using any commas.",
+    "reference_answer": "Diverse species stabilize natural environments. Interdependent organisms balance local nutrient cycles. Habitat destruction threatens fragile food webs everywhere.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c157",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 157] Write exactly 3 sentences explaining cryptography basics without using any commas.",
+    "reference_answer": "Ciphers conceal sensitive messages from unauthorized observers. Mathematical keys lock and unlock digital text. Security protects contemporary digital communication channels.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c158",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 158] Write exactly 3 sentences explaining stellar life cycles without using any commas.",
+    "reference_answer": "Protostars ignite hydrogen fusion within dense nebulae. Mature stars balance immense gravitational collapse. Supernovae disperse heavy cosmic elements across galaxies.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c159",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 159] Write exactly 3 sentences explaining oceanic currents without using any commas.",
+    "reference_answer": "Thermohaline circulation channels heat across international waters. Prevailing winds guide surface tidal drifts. Marine ecosystems depend upon nutrient upwelling.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c160",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 160] Write exactly 3 sentences explaining quantum behavior without using any commas.",
+    "reference_answer": "Subatomic particles exhibit simultaneous wave and particle characteristics. Measurement collapses indeterminate probabilistic states immediately. Entanglement links distant particles instantly.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "c161",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 161] List exactly 4 distinct points about microservices benefits. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Independent scaling of components\n* Decoupled deployment pipelines\n* Fault isolation across boundaries\n* Polyglot technology selection",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c162",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 162] List exactly 4 distinct points about clean code principles. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Meaningful variable identifiers\n* Small focused functions\n* Comprehensive automated tests\n* Clear modular abstraction",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c163",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 163] List exactly 4 distinct points about agile sprint phases. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Sprint planning session\n* Daily standup synchronization\n* Iterative feature development\n* Sprint retrospective review",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c164",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 164] List exactly 4 distinct points about cybersecurity hygiene rules. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Enforce multifactor authentication\n* Apply routine software patches\n* Maintain isolated offline backups\n* Conduct regular access audits",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c165",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 165] List exactly 4 distinct points about data normalization advantages. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Elimination of redundant fields\n* Improved data consistency\n* Reduced anomalies on update\n* Optimized database storage footprint",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c166",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 166] List exactly 4 distinct points about cloud architecture pillars. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Operational excellence practices\n* Robust data encryption\n* Automated elasticity configurations\n* Proactive cost management",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c167",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 167] List exactly 4 distinct points about distributed caching strategies. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Cache aside pattern\n* Read through caching\n* Write through synchronization\n* Time to live expirations",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c168",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 168] List exactly 4 distinct points about machine learning pipelines. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Raw data ingestion\n* Automated feature engineering\n* Model parameter optimization\n* Continuous validation telemetry",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c169",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 169] List exactly 4 distinct points about REST API guidelines. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Stateless request handling\n* Standard HTTP verbs\n* Predictable status responses\n* Hierarchical resource URIs",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c170",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 170] List exactly 4 distinct points about CI/CD best practices. Each point must start with '* ' and contain no more than 6 words.",
+    "reference_answer": "* Fast deterministic test runs\n* Immutable build artifacts\n* Automated rollback triggers\n* Comprehensive observability logs",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "c171",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 171] Output an operational status line starting strictly with 'STATUS:'. The total output must have between 12 and 16 words.",
+    "reference_answer": "STATUS: System latency remains nominal across all edge servers with zero errors.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "STATUS:"
+      }
+    }
+  },
+  {
+    "id": "c172",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 172] Output an operational status line starting strictly with 'ALERT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "ALERT: Database memory utilization exceeded critical threshold on replica node three.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "ALERT:"
+      }
+    }
+  },
+  {
+    "id": "c173",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 173] Output an operational status line starting strictly with 'NOTE:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "NOTE: Scheduled maintenance begins at midnight UTC and lasts exactly two hours.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "NOTE:"
+      }
+    }
+  },
+  {
+    "id": "c174",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 174] Output an operational status line starting strictly with 'CONFIRM:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "CONFIRM: All production deployment validation health checks passed without any regressions.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "CONFIRM:"
+      }
+    }
+  },
+  {
+    "id": "c175",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 175] Output an operational status line starting strictly with 'METRIC:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "METRIC: Weekly active customer engagement increased fourteen percent following recent release.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "METRIC:"
+      }
+    }
+  },
+  {
+    "id": "c176",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 176] Output an operational status line starting strictly with 'AUDIT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "AUDIT: Access permissions for temporary contractor accounts were revoked as scheduled.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "AUDIT:"
+      }
+    }
+  },
+  {
+    "id": "c177",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 177] Output an operational status line starting strictly with 'REPORT:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "REPORT: Quarterly sales targets across European regions exceeded previous historical benchmarks.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "REPORT:"
+      }
+    }
+  },
+  {
+    "id": "c178",
+    "category": "conflicting_constraints",
+    "split": "tune",
+    "prompt": "[CHALLENGE 178] Output an operational status line starting strictly with 'WARNING:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "WARNING: Upstream payment gateway timeout rate reached two percent during peak load.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "WARNING:"
+      }
+    }
+  },
+  {
+    "id": "c179",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 179] Output an operational status line starting strictly with 'DISPATCH:'. The total output must have between 11 and 15 words.",
+    "reference_answer": "DISPATCH: Emergency maintenance crew arrived on site to inspect fiber optic lines.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "DISPATCH:"
+      }
+    }
+  },
+  {
+    "id": "c180",
+    "category": "conflicting_constraints",
+    "split": "test",
+    "prompt": "[CHALLENGE 180] Output an operational status line starting strictly with 'TELEMETRY:'. The total output must have between 10 and 14 words.",
+    "reference_answer": "TELEMETRY: Background queue processing completed one million tasks within five minutes.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "TELEMETRY:"
+      }
+    }
+  },
+  {
+    "id": "c181",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 181] Generate a valid JSON object representing a microservice telemetry payload. It must strictly contain the following top-level keys: service, status, metrics.",
+    "reference_answer": "{\"service\": \"auth-service\", \"status\": \"healthy\", \"metrics\": {\"cpu\": 22.4, \"memory_mb\": 512, \"uptime_sec\": 86400}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "service",
+          "status",
+          "metrics"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c182",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 182] Generate a valid JSON object representing a ecommerce order with shipping address. It must strictly contain the following top-level keys: order_id, customer, shipping_address, total_cents.",
+    "reference_answer": "{\"order_id\": \"ORD-9912\", \"customer\": \"Dana Scully\", \"shipping_address\": {\"street\": \"123 Main\", \"city\": \"DC\", \"zip\": \"20001\"}, \"total_cents\": 14900}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "order_id",
+          "customer",
+          "shipping_address",
+          "total_cents"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c183",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 183] Generate a valid JSON object representing a CI pipeline build artifact descriptor. It must strictly contain the following top-level keys: build_id, commit_sha, artifacts, passed.",
+    "reference_answer": "{\"build_id\": \"b-4491\", \"commit_sha\": \"7f8a91c\", \"artifacts\": [\"bin/app\", \"docs/api.json\"], \"passed\": true}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "build_id",
+          "commit_sha",
+          "artifacts",
+          "passed"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c184",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 184] Generate a valid JSON object representing a cloud security IAM policy. It must strictly contain the following top-level keys: version, statement, role_arn.",
+    "reference_answer": "{\"version\": \"2026-10-17\", \"statement\": {\"effect\": \"Allow\", \"action\": \"s3:*\"}, \"role_arn\": \"arn:aws:iam::123:role/App\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "version",
+          "statement",
+          "role_arn"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c185",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 185] Generate a valid JSON object representing a machine learning model registry entry. It must strictly contain the following top-level keys: model_name, version, hyperparameters, accuracy.",
+    "reference_answer": "{\"model_name\": \"fraud_detector\", \"version\": \"2.4.0\", \"hyperparameters\": {\"lr\": 0.001, \"epochs\": 50}, \"accuracy\": 0.984}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "model_name",
+          "version",
+          "hyperparameters",
+          "accuracy"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c186",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 186] Generate a valid JSON object representing a database replication status. It must strictly contain the following top-level keys: primary_node, replicas, lag_seconds, sync_mode.",
+    "reference_answer": "{\"primary_node\": \"pg-01\", \"replicas\": [\"pg-02\", \"pg-03\"], \"lag_seconds\": 0.05, \"sync_mode\": \"streaming\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "primary_node",
+          "replicas",
+          "lag_seconds",
+          "sync_mode"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c187",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 187] Generate a valid JSON object representing a IoT sensor environmental reading. It must strictly contain the following top-level keys: device_id, sensor_type, reading, timestamp_iso.",
+    "reference_answer": "{\"device_id\": \"temp-sensor-09\", \"sensor_type\": \"thermocouple\", \"reading\": {\"celsius\": 21.5, \"humidity_pct\": 45}, \"timestamp_iso\": \"2026-11-07T12:00:00Z\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "device_id",
+          "sensor_type",
+          "reading",
+          "timestamp_iso"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c188",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 188] Generate a valid JSON object representing a user session authentication token. It must strictly contain the following top-level keys: session_id, user_id, claims, expires_at.",
+    "reference_answer": "{\"session_id\": \"sess-xyz\", \"user_id\": \"usr-8812\", \"claims\": {\"role\": \"admin\", \"org\": \"acme\"}, \"expires_at\": 1799999999}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "session_id",
+          "user_id",
+          "claims",
+          "expires_at"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c189",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 189] Generate a valid JSON object representing a API gateway route configuration. It must strictly contain the following top-level keys: path, upstream_service, rate_limit, cors.",
+    "reference_answer": "{\"path\": \"/v1/users\", \"upstream_service\": \"user-backend:3000\", \"rate_limit\": {\"rpm\": 1000}, \"cors\": {\"enabled\": true}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "path",
+          "upstream_service",
+          "rate_limit",
+          "cors"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c190",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 190] Generate a valid JSON object representing a financial trade execution message. It must strictly contain the following top-level keys: trade_id, symbol, execution, counterparty.",
+    "reference_answer": "{\"trade_id\": \"TRD-7721\", \"symbol\": \"AAPL\", \"execution\": {\"shares\": 500, \"price\": 225.5}, \"counterparty\": \"BANK-A\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "trade_id",
+          "symbol",
+          "execution",
+          "counterparty"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c191",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 191] Generate a valid JSON object representing a kubernetes pod status object. It must strictly contain the following top-level keys: pod_name, namespace, containers, restart_count.",
+    "reference_answer": "{\"pod_name\": \"web-7df88-lk2\", \"namespace\": \"prod\", \"containers\": [{\"name\": \"web\", \"image\": \"v1.2\"}], \"restart_count\": 0}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "pod_name",
+          "namespace",
+          "containers",
+          "restart_count"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c192",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 192] Generate a valid JSON object representing a weather station telemetry packet. It must strictly contain the following top-level keys: station_code, coordinates, atmospheric_pressure_hpa, wind.",
+    "reference_answer": "{\"station_code\": \"STN-DEN-01\", \"coordinates\": {\"lat\": 39.7392, \"lon\": -104.9903}, \"atmospheric_pressure_hpa\": 1013.2, \"wind\": {\"speed_knots\": 12, \"dir\": \"NW\"}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "station_code",
+          "coordinates",
+          "atmospheric_pressure_hpa",
+          "wind"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c193",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 193] Generate a valid JSON object representing a video streaming transcode profile. It must strictly contain the following top-level keys: profile_name, codecs, resolutions, bitrate_kbps.",
+    "reference_answer": "{\"profile_name\": \"adaptive_hls\", \"codecs\": {\"video\": \"h264\", \"audio\": \"aac\"}, \"resolutions\": [\"1080p\", \"720p\"], \"bitrate_kbps\": 4500}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "profile_name",
+          "codecs",
+          "resolutions",
+          "bitrate_kbps"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c194",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 194] Generate a valid JSON object representing a medical laboratory test result. It must strictly contain the following top-level keys: patient_id, test_code, panels, flagged.",
+    "reference_answer": "{\"patient_id\": \"PT-3392\", \"test_code\": \"CBC-01\", \"panels\": {\"wbc\": 6.5, \"rbc\": 4.8}, \"flagged\": false}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "patient_id",
+          "test_code",
+          "panels",
+          "flagged"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c195",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 195] Generate a valid JSON object representing a event streaming message envelope. It must strictly contain the following top-level keys: event_id, topic, headers, payload.",
+    "reference_answer": "{\"event_id\": \"ev-8819\", \"topic\": \"orders.created\", \"headers\": {\"trace_id\": \"tr-102\"}, \"payload\": {\"order_id\": 99}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "event_id",
+          "topic",
+          "headers",
+          "payload"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c196",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 196] Return ONLY a JSON document representing a DNS zone record specification. You must include these exact keys: domain, records, ttl_seconds.",
+    "reference_answer": "{\"domain\": \"example.com\", \"records\": [{\"type\": \"A\", \"val\": \"1.1.1.1\"}], \"ttl_seconds\": 3600}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "domain",
+          "records",
+          "ttl_seconds"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c197",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 197] Return ONLY a JSON document representing a OAuth2 client registration. You must include these exact keys: client_id, redirect_uris, grant_types.",
+    "reference_answer": "{\"client_id\": \"cli-123\", \"redirect_uris\": [\"https://app/callback\"], \"grant_types\": [\"auth_code\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "client_id",
+          "redirect_uris",
+          "grant_types"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c198",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 198] Return ONLY a JSON document representing a database migration manifest. You must include these exact keys: migration_id, up_sql, down_sql.",
+    "reference_answer": "{\"migration_id\": \"002_add_index\", \"up_sql\": \"CREATE INDEX ...\", \"down_sql\": \"DROP INDEX ...\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "migration_id",
+          "up_sql",
+          "down_sql"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c199",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 199] Return ONLY a JSON document representing a log analytics filter rule. You must include these exact keys: rule_name, query, severity_threshold.",
+    "reference_answer": "{\"rule_name\": \"high_error_rate\", \"query\": \"status >= 500\", \"severity_threshold\": \"CRITICAL\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "rule_name",
+          "query",
+          "severity_threshold"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c200",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 200] Return ONLY a JSON document representing a package dependency lockfile excerpt. You must include these exact keys: package_name, resolved_version, integrity_hash.",
+    "reference_answer": "{\"package_name\": \"pydantic\", \"resolved_version\": \"2.8.2\", \"integrity_hash\": \"sha256-abc\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "package_name",
+          "resolved_version",
+          "integrity_hash"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c201",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 201] Return ONLY a JSON document representing a GPU compute cluster node metrics. You must include these exact keys: node_id, gpu_utilization_pct, temperature_celsius.",
+    "reference_answer": "{\"node_id\": \"gpu-node-04\", \"gpu_utilization_pct\": 89.5, \"temperature_celsius\": 71}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "node_id",
+          "gpu_utilization_pct",
+          "temperature_celsius"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c202",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 202] Return ONLY a JSON document representing a autonomous vehicle lidar scan frame. You must include these exact keys: frame_id, point_count, calibration.",
+    "reference_answer": "{\"frame_id\": \"f-109283\", \"point_count\": 128000, \"calibration\": {\"yaw\": 0.0}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "frame_id",
+          "point_count",
+          "calibration"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c203",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 203] Return ONLY a JSON document representing a payment split configuration. You must include these exact keys: merchant_id, splits, currency.",
+    "reference_answer": "{\"merchant_id\": \"m-882\", \"splits\": [{\"partner\": \"p1\", \"share\": 0.15}], \"currency\": \"USD\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "merchant_id",
+          "splits",
+          "currency"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c204",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 204] Return ONLY a JSON document representing a backup storage lifecycle rule. You must include these exact keys: bucket, transition_days, glacier_archive.",
+    "reference_answer": "{\"bucket\": \"corp-backups\", \"transition_days\": 30, \"glacier_archive\": true}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "bucket",
+          "transition_days",
+          "glacier_archive"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c205",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 205] Return ONLY a JSON document representing a customer credit assessment report. You must include these exact keys: applicant_id, credit_score, risk_category.",
+    "reference_answer": "{\"applicant_id\": \"APP-99120\", \"credit_score\": 765, \"risk_category\": \"LOW\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "applicant_id",
+          "credit_score",
+          "risk_category"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c206",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 206] Return ONLY a JSON document representing a search index shard allocation. You must include these exact keys: index_name, shard_id, replica_nodes.",
+    "reference_answer": "{\"index_name\": \"products_v2\", \"shard_id\": 3, \"replica_nodes\": [\"node-2\", \"node-5\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "index_name",
+          "shard_id",
+          "replica_nodes"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c207",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 207] Return ONLY a JSON document representing a webhook dispatch payload. You must include these exact keys: target_url, attempt_number, payload_body.",
+    "reference_answer": "{\"target_url\": \"https://hooks/alert\", \"attempt_number\": 1, \"payload_body\": {\"event\": \"ping\"}}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "target_url",
+          "attempt_number",
+          "payload_body"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c208",
+    "category": "nested_formats",
+    "split": "tune",
+    "prompt": "[CHALLENGE 208] Return ONLY a JSON document representing a inventory replenishment trigger. You must include these exact keys: warehouse_id, reorder_skus, supplier_id.",
+    "reference_answer": "{\"warehouse_id\": \"WH-WEST-01\", \"reorder_skus\": [\"SKU-1\", \"SKU-2\"], \"supplier_id\": \"SUP-99\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "warehouse_id",
+          "reorder_skus",
+          "supplier_id"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c209",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 209] Return ONLY a JSON document representing a microfrontend remotes registry. You must include these exact keys: app_name, remote_entry_url, shared_dependencies.",
+    "reference_answer": "{\"app_name\": \"checkout_mfe\", \"remote_entry_url\": \"/remoteEntry.js\", \"shared_dependencies\": [\"react\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "app_name",
+          "remote_entry_url",
+          "shared_dependencies"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c210",
+    "category": "nested_formats",
+    "split": "test",
+    "prompt": "[CHALLENGE 210] Return ONLY a JSON document representing a SSL certificate inspection report. You must include these exact keys: domain_name, issuer, valid_until_epoch.",
+    "reference_answer": "{\"domain_name\": \"secure.bank.com\", \"issuer\": \"DigiCert\", \"valid_until_epoch\": 1893456000}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": [
+          "domain_name",
+          "issuer",
+          "valid_until_epoch"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c211",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 211] A submarine at 450 feet below sea level ascends 180 feet, then descends 70 feet. What is its depth in feet below sea level? Reply with number only.",
+    "reference_answer": "340",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 340,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c212",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 212] The temperature in Anchorage was -12 degrees Fahrenheit at dawn. By noon it rose 19 degrees, but by midnight it fell 15 degrees. What was the midnight temperature? Reply with number only.",
+    "reference_answer": "-8",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": -8,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c213",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 213] A bank account has a balance of $120. The owner writes a check for $150 and then deposits $80. What is the current balance in dollars? Reply with number only.",
+    "reference_answer": "50",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 50,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c214",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 214] A retail company had a net loss of $25,000 in Q1. In Q2 they made a profit of $40,000. In Q3 they lost $10,000. What was their total net profit or loss across the three quarters? Reply with number only.",
+    "reference_answer": "5000",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 5000,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c215",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 215] An elevator starts on floor 0 (ground). It goes down 3 floors to the basement parking, goes up 14 floors, then goes down 5 floors. What floor is it on now? Reply with number only.",
+    "reference_answer": "6",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 6,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c216",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 216] A freezer temperature was set to -18 degrees Celsius. During a defrost cycle the temperature increased by 14 degrees, and then dropped back down by 10 degrees. What is the temperature now? Reply with number only.",
+    "reference_answer": "-14",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": -14,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c217",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 217] A scuba diver starts at surface (0 meters). She dives down 28 meters, swims up 11 meters to explore a reef, then descends another 9 meters. What is her depth in meters? Reply with number only.",
+    "reference_answer": "26",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 26,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c218",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 218] A merchant bought 50 lamps for $10 each. 10 lamps were broken and thrown away. The merchant sold the remaining lamps for $20 each. What was the net profit in dollars? Reply with number only.",
+    "reference_answer": "300",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 300,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c219",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 219] A car rental company charges $30 per day plus $0.20 per mile. If you rent a car for 3 days and drive 200 miles, what is the total cost in dollars? Reply with number only.",
+    "reference_answer": "130",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 130,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c220",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 220] A student scored 85, 90, and 75 on three exams. What score must the student get on the fourth exam to have an overall average of 85? Reply with number only.",
+    "reference_answer": "90",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 90,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c221",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 221] If a clock strikes 6 times in 5 seconds, how many seconds does it take to strike 12 times? Reply with the number only.",
+    "reference_answer": "11",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 11,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c222",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 222] A tank can be filled by pipe A in 4 hours and emptied by pipe B in 6 hours. If both pipes are opened together, how many hours does it take to fill the tank? Reply with number only.",
+    "reference_answer": "12",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 12,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c223",
+    "category": "tricky_edge_cases",
+    "split": "tune",
+    "prompt": "[CHALLENGE 223] A train 200 meters long traveling at 20 meters per second passes a stationary pole. How many seconds does it take the train to completely pass the pole? Reply with number only.",
+    "reference_answer": "10",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 10,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c224",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 224] Two cyclists start 60 miles apart and ride towards each other, one at 12 mph and the other at 18 mph. How many hours until they meet? Reply with number only.",
+    "reference_answer": "2",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 2,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "c225",
+    "category": "tricky_edge_cases",
+    "split": "test",
+    "prompt": "[CHALLENGE 225] A warehouse has 200 boxes. Day 1: 50% are shipped out. Day 2: 20 new boxes arrive. Day 3: 25% of the remaining boxes are shipped out. How many boxes remain? Reply with number only.",
+    "reference_answer": "90",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 90,
+        "tolerance": 0
+      }
+    }
+  }
+]

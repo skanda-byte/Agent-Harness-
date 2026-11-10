@@ -1,0 +1,87 @@
+{
+  "run_at": "20261107T115542Z",
+  "total": 10,
+  "passed": 0,
+  "results": [
+    {
+      "id": "s001",
+      "category": "json_validation",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 2.876
+    },
+    {
+      "id": "s002",
+      "category": "json_validation",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.082
+    },
+    {
+      "id": "s003",
+      "category": "numeric_answer",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.07
+    },
+    {
+      "id": "s004",
+      "category": "numeric_answer",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.061
+    },
+    {
+      "id": "s005",
+      "category": "word_count",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.081
+    },
+    {
+      "id": "s006",
+      "category": "word_count",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.073
+    },
+    {
+      "id": "s007",
+      "category": "regex_match",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.089
+    },
+    {
+      "id": "s008",
+      "category": "regex_match",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.076
+    },
+    {
+      "id": "s009",
+      "category": "bullet_count",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.076
+    },
+    {
+      "id": "s010",
+      "category": "bullet_count",
+      "passed": false,
+      "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+      "response": null,
+      "latency_s": 0.079
+    }
+  ]
+}

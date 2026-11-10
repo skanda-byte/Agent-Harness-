@@ -1,0 +1,107 @@
+{
+  "run_at": "20261107T115832Z",
+  "total": 10,
+  "passed": 10,
+  "results": [
+    {
+      "id": "s001",
+      "category": "json_validation",
+      "prompt": "Return a JSON object (and nothing else) with these keys: name, age, email. Use realistic placeholder values.",
+      "response": "{\"name\":\"John Doe\",\"age\":30,\"email\":\"john.doe@example.com\"}",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 1.959
+    },
+    {
+      "id": "s002",
+      "category": "json_validation",
+      "prompt": "Return ONLY a JSON object with keys: title, author, year, genre. Fill in values for any book you like.",
+      "response": "{\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":1960,\"genre\":\"Southern Gothic, Bildungsroman\"}",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.728
+    },
+    {
+      "id": "s003",
+      "category": "numeric_answer",
+      "prompt": "What is 17 multiplied by 24? Reply with the number only, no explanation.",
+      "response": "408",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.371
+    },
+    {
+      "id": "s004",
+      "category": "numeric_answer",
+      "prompt": "A rectangle has width 13 and height 7. What is its area? Reply with the number only.",
+      "response": "91",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.504
+    },
+    {
+      "id": "s005",
+      "category": "word_count",
+      "prompt": "Write a short paragraph about the water cycle. It must be between 40 and 80 words.",
+      "response": "The water cycle, also called the hydrologic cycle, describes how water moves through Earth's atmosphere, surface, and underground. Evaporation turns liquid into vapor, condensation forms clouds, precipitation returns water to land, and runoff or infiltration replenishes aquifers. This continuous process sustains life, regulates climate, and shapes landscapes worldwide.",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.816
+    },
+    {
+      "id": "s006",
+      "category": "word_count",
+      "prompt": "Explain what photosynthesis is in exactly 20 to 40 words.",
+      "response": "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight, water, and carbon dioxide into glucose and oxygen, storing energy for growth and survival.",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.719
+    },
+    {
+      "id": "s007",
+      "category": "regex_match",
+      "prompt": "What is today's date? Reply in the format YYYY-MM-DD only, nothing else.",
+      "response": "2026-11-07",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.247
+    },
+    {
+      "id": "s008",
+      "category": "regex_match",
+      "prompt": "Generate a sample IPv4 address. Reply with the IP address only, nothing else.",
+      "response": "203.45.12.78",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.504
+    },
+    {
+      "id": "s009",
+      "category": "bullet_count",
+      "prompt": "List exactly 5 benefits of regular exercise. Use bullet points starting with '-'.",
+      "response": "- Improves cardiovascular health and reduces the risk of heart disease  \n- Enhances muscular strength and endurance, supporting daily activities  \n- Boosts mental well‑being by reducing stress, anxiety, and depression  \n- Aids in weight management and helps maintain a healthy body composition  \n- Strengthens bones and joints, lowering the risk of osteoporosis and injury  ",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.546
+    },
+    {
+      "id": "s010",
+      "category": "bullet_count",
+      "prompt": "List exactly 3 programming languages used for data science. Use bullet points starting with '-'.",
+      "response": "- Python  \n- R  \n- Julia",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "latency_s": 0.754
+    }
+  ]
+}

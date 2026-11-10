@@ -1,0 +1,725 @@
+[
+  {
+    "id": "s001",
+    "category": "json_extraction",
+    "split": "tune",
+    "prompt": "Return a JSON object about a user profile. Include the keys: name, email, age.",
+    "reference_answer": "{\"name\": \"Alice Smith\", \"email\": \"alice@example.com\", \"age\": 29}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["name", "email", "age"]
+      }
+    }
+  },
+  {
+    "id": "s002",
+    "category": "json_extraction",
+    "split": "tune",
+    "prompt": "Return ONLY a JSON object with keys: title, author, year, genre. Fill in values for any book you like.",
+    "reference_answer": "{\"title\": \"Dune\", \"author\": \"Frank Herbert\", \"year\": 1965, \"genre\": \"Science Fiction\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["title", "author", "year", "genre"]
+      }
+    }
+  },
+  {
+    "id": "s003",
+    "category": "json_extraction",
+    "split": "tune",
+    "prompt": "Return a JSON object with server configuration parameters. Required keys: host, port, protocol.",
+    "reference_answer": "{\"host\": \"127.0.0.1\", \"port\": 8080, \"protocol\": \"https\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["host", "port", "protocol"]
+      }
+    }
+  },
+  {
+    "id": "s004",
+    "category": "json_extraction",
+    "split": "tune",
+    "prompt": "Output a product inventory record in JSON format with keys: sku, name, price, stock.",
+    "reference_answer": "{\"sku\": \"A100-XYZ\", \"name\": \"Wireless Mouse\", \"price\": 29.99, \"stock\": 150}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["sku", "name", "price", "stock"]
+      }
+    }
+  },
+  {
+    "id": "s005",
+    "category": "json_extraction",
+    "split": "tune",
+    "prompt": "Return a JSON object representing a flight booking with keys: flight_number, origin, destination, seat.",
+    "reference_answer": "{\"flight_number\": \"AA123\", \"origin\": \"JFK\", \"destination\": \"LHR\", \"seat\": \"14B\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["flight_number", "origin", "destination", "seat"]
+      }
+    }
+  },
+  {
+    "id": "s006",
+    "category": "json_extraction",
+    "split": "test",
+    "prompt": "Return a weather report in valid JSON containing keys: city, temperature, humidity, condition.",
+    "reference_answer": "{\"city\": \"Seattle\", \"temperature\": 16, \"humidity\": 82, \"condition\": \"Rainy\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["city", "temperature", "humidity", "condition"]
+      }
+    }
+  },
+  {
+    "id": "s007",
+    "category": "json_extraction",
+    "split": "test",
+    "prompt": "Generate a payroll record as a JSON object with keys: employee_id, salary, department.",
+    "reference_answer": "{\"employee_id\": \"EMP-4821\", \"salary\": 95000, \"department\": \"Engineering\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["employee_id", "salary", "department"]
+      }
+    }
+  },
+  {
+    "id": "s008",
+    "category": "json_extraction",
+    "split": "test",
+    "prompt": "Provide recipe metadata in JSON format with keys: dish_name, prep_time_minutes, ingredients.",
+    "reference_answer": "{\"dish_name\": \"Pasta Carbonara\", \"prep_time_minutes\": 20, \"ingredients\": [\"pasta\", \"eggs\", \"pancetta\", \"parmesan\"]}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["dish_name", "prep_time_minutes", "ingredients"]
+      }
+    }
+  },
+  {
+    "id": "s009",
+    "category": "json_extraction",
+    "split": "test",
+    "prompt": "Produce a payment transaction receipt in JSON with keys: transaction_id, amount, currency, status.",
+    "reference_answer": "{\"transaction_id\": \"txn_987654321\", \"amount\": 150.00, \"currency\": \"USD\", \"status\": \"completed\"}",
+    "checker": {
+      "type": "valid_json_with_keys",
+      "params": {
+        "required_keys": ["transaction_id", "amount", "currency", "status"]
+      }
+    }
+  },
+  {
+    "id": "s010",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How many cents does the ball cost? Reply with the number only.",
+    "reference_answer": "5",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 5,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s011",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A rectangle has width 13 and height 7. What is its area? Reply with the number only.",
+    "reference_answer": "91",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 91,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s012",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A bakery baked 100 croissants. They sold 45 in the morning and 38 in the afternoon. How many croissants are left unsold? Reply with the number only.",
+    "reference_answer": "17",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 17,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s013",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A train travels at an average speed of 60 miles per hour for 2.5 hours. How many miles did the train travel? Reply with the number only.",
+    "reference_answer": "150",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 150,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s014",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A jacket originally priced at $80 is discounted by 20%. What is the discounted price in dollars? Reply with the number only.",
+    "reference_answer": "64",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 64,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s015",
+    "category": "arithmetic_word_problems",
+    "split": "tune",
+    "prompt": "A farm has 24 chickens and 12 cows. How many animal legs are there in total? Reply with the number only.",
+    "reference_answer": "96",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 96,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s016",
+    "category": "arithmetic_word_problems",
+    "split": "test",
+    "prompt": "A book has 320 pages. If Marcus reads 40 pages every day, how many days will it take him to finish the book? Reply with the number only.",
+    "reference_answer": "8",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 8,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s017",
+    "category": "arithmetic_word_problems",
+    "split": "test",
+    "prompt": "If 5 machines make 5 widgets in 5 minutes, how many minutes does it take 100 machines to make 100 widgets? Reply with the number only.",
+    "reference_answer": "5",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 5,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s018",
+    "category": "arithmetic_word_problems",
+    "split": "test",
+    "prompt": "A young tree was 14 feet tall. Over 6 years, it grew exactly 3 feet each year. How many feet tall is it now? Reply with the number only.",
+    "reference_answer": "32",
+    "checker": {
+      "type": "numeric_match",
+      "params": {
+        "expected": 32,
+        "tolerance": 0
+      }
+    }
+  },
+  {
+    "id": "s019",
+    "category": "format_constraints",
+    "split": "tune",
+    "prompt": "What is today's date? Give the date as year, month, and day formatted as YYYY-MM-DD only.",
+    "reference_answer": "2026-11-07",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      }
+    }
+  },
+  {
+    "id": "s020",
+    "category": "format_constraints",
+    "split": "tune",
+    "prompt": "Generate a sample IPv4 address. Reply with the IP address only, nothing else.",
+    "reference_answer": "192.168.1.1",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$"
+      }
+    }
+  },
+  {
+    "id": "s021",
+    "category": "format_constraints",
+    "split": "tune",
+    "prompt": "List 5 benefits of drinking water every day using '-' bullet points.",
+    "reference_answer": "- Maintains bodily fluid balance\n- Energizes muscles\n- Keeps skin hydrated\n- Supports kidney function\n- Aids digestive health",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 5,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "s022",
+    "category": "format_constraints",
+    "split": "tune",
+    "prompt": "List exactly 3 programming languages commonly used for data science. Use bullet points starting with '*'.",
+    "reference_answer": "* Python\n* R\n* Julia",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 3,
+        "bullet_prefix": "*"
+      }
+    }
+  },
+  {
+    "id": "s023",
+    "category": "format_constraints",
+    "split": "tune",
+    "prompt": "Write a short paragraph about why exercise is healthy without using any commas.",
+    "reference_answer": "Daily physical activity keeps your heart strong and healthy. It also boosts energy levels and enhances mental focus.",
+    "checker": {
+      "type": "no_commas",
+      "params": {}
+    }
+  },
+  {
+    "id": "s024",
+    "category": "format_constraints",
+    "split": "test",
+    "prompt": "Write exactly 3 sentences describing the planet Mars.",
+    "reference_answer": "Mars is the fourth planet from the Sun and is often called the Red Planet. Its thin atmosphere consists mostly of carbon dioxide and nitrogen. Massive dust storms frequently engulf the rocky Martian terrain.",
+    "checker": {
+      "type": "sentence_count",
+      "params": {
+        "n": 3
+      }
+    }
+  },
+  {
+    "id": "s025",
+    "category": "format_constraints",
+    "split": "test",
+    "prompt": "List exactly 4 seasons of the year using bullet points starting with '-'.",
+    "reference_answer": "- Spring\n- Summer\n- Autumn\n- Winter",
+    "checker": {
+      "type": "exact_bullet_count",
+      "params": {
+        "expected_count": 4,
+        "bullet_prefix": "-"
+      }
+    }
+  },
+  {
+    "id": "s026",
+    "category": "format_constraints",
+    "split": "test",
+    "prompt": "Provide a sample Canadian postal code format (one letter, one digit, one letter, a space, one digit, one letter, one digit). Output only the code.",
+    "reference_answer": "K1A 0B1",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^[A-Z]\\d[A-Z] \\d[A-Z]\\d$"
+      }
+    }
+  },
+  {
+    "id": "s027",
+    "category": "format_constraints",
+    "split": "test",
+    "prompt": "Output a single 6-digit hexadecimal color code starting with # (e.g. #336699). Output nothing else.",
+    "reference_answer": "#1A2B3C",
+    "checker": {
+      "type": "regex_match",
+      "params": {
+        "pattern": "^#[0-9a-fA-F]{6}$"
+      }
+    }
+  },
+  {
+    "id": "s028",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "What is the chemical formula of water and what two chemical elements compose it?",
+    "reference_answer": "The chemical formula of water is H2O. It is composed of hydrogen and oxygen.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["H2O", "hydrogen", "oxygen"]
+      }
+    }
+  },
+  {
+    "id": "s029",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "Who developed the theory of general relativity and in what year was it published?",
+    "reference_answer": "The theory of general relativity was developed by Albert Einstein and published in 1915.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["Albert Einstein", "1915"]
+      }
+    }
+  },
+  {
+    "id": "s030",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "What is the capital city of Japan and what main island of Japan is it on?",
+    "reference_answer": "The capital of Japan is Tokyo, located on the island of Honshu.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["Tokyo", "Honshu"]
+      }
+    }
+  },
+  {
+    "id": "s031",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "What biological process allows green plants to synthesize nutrients from sunlight, and what green pigment facilitates this?",
+    "reference_answer": "Green plants use photosynthesis to synthesize glucose, aided by the green pigment chlorophyll.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["photosynthesis", "chlorophyll"]
+      }
+    }
+  },
+  {
+    "id": "s032",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "Which planet in the solar system is known as the Red Planet, and what substance primarily gives it that color?",
+    "reference_answer": "Mars is known as the Red Planet due to the abundance of iron oxide on its surface.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["Mars", "iron oxide"]
+      }
+    }
+  },
+  {
+    "id": "s033",
+    "category": "factual_qa",
+    "split": "tune",
+    "prompt": "What is the largest living mammal on Earth and what habitat do they live in?",
+    "reference_answer": "The largest mammal is the blue whale, which lives in the ocean.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["blue whale", "ocean"]
+      }
+    }
+  },
+  {
+    "id": "s034",
+    "category": "factual_qa",
+    "split": "test",
+    "prompt": "What is the most abundant gas in Earth's atmosphere and what percentage does it account for approximately?",
+    "reference_answer": "Nitrogen is the most abundant gas, making up approximately 78% of Earth's atmosphere.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["nitrogen", "78%"]
+      }
+    }
+  },
+  {
+    "id": "s035",
+    "category": "factual_qa",
+    "split": "test",
+    "prompt": "Who is credited with inventing the World Wide Web, and at what European research facility did he do this work?",
+    "reference_answer": "Tim Berners-Lee invented the World Wide Web while working at CERN in 1989.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["Tim Berners-Lee", "CERN"]
+      }
+    }
+  },
+  {
+    "id": "s036",
+    "category": "factual_qa",
+    "split": "test",
+    "prompt": "What is the official currency of the United Kingdom and what central bank issues its banknotes?",
+    "reference_answer": "The official currency is the pound sterling, issued by the Bank of England.",
+    "checker": {
+      "type": "contains_all",
+      "params": {
+        "words": ["pound sterling", "Bank of England"]
+      }
+    }
+  },
+  {
+    "id": "s037",
+    "category": "instruction_following",
+    "split": "tune",
+    "prompt": "Explain what gravity is in a brief sentence. Your entire response must begin with 'ANSWER:'.",
+    "reference_answer": "ANSWER: Gravity is a fundamental natural force that attracts physical bodies toward one another.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "ANSWER:"
+      }
+    }
+  },
+  {
+    "id": "s038",
+    "category": "instruction_following",
+    "split": "tune",
+    "prompt": "Describe how a bicycle works without using the words 'wheel', 'pedal', or 'bike'.",
+    "reference_answer": "A rider mounts the two-tired frame and pushes rotating cranks with their feet to propel the machine forward.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": ["wheel", "pedal", "bike"]
+      }
+    }
+  },
+  {
+    "id": "s039",
+    "category": "instruction_following",
+    "split": "tune",
+    "prompt": "Provide 2 sentences on public speaking tips. Each sentence must be between 10 and 15 words long.",
+    "reference_answer": "Make steady eye contact with audience members across the room to build natural confidence. Speak at a measured tempo so listeners can readily absorb your core points.",
+    "checker": {
+      "type": "words_per_sentence",
+      "params": {
+        "min": 10,
+        "max": 15
+      }
+    }
+  },
+  {
+    "id": "s040",
+    "category": "instruction_following",
+    "split": "tune",
+    "prompt": "Acknowledge receipt of a message. Your response must strictly start with 'CONFIRMED:'.",
+    "reference_answer": "CONFIRMED: Your message has been received and logged successfully into our queue.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "CONFIRMED:"
+      }
+    }
+  },
+  {
+    "id": "s041",
+    "category": "instruction_following",
+    "split": "tune",
+    "prompt": "Explain what an algorithm is without using the words 'computer', 'code', or 'program'.",
+    "reference_answer": "An algorithm is an unambiguous sequence of step-by-step instructions designed to solve a specific problem.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": ["computer", "code", "program"]
+      }
+    }
+  },
+  {
+    "id": "s042",
+    "category": "instruction_following",
+    "split": "test",
+    "prompt": "Give a formal greeting to an attendee. Your response must start with 'GREETINGS:'.",
+    "reference_answer": "GREETINGS: Welcome to the annual symposium on computational intelligence and machine reasoning.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "GREETINGS:"
+      }
+    }
+  },
+  {
+    "id": "s043",
+    "category": "instruction_following",
+    "split": "test",
+    "prompt": "Describe the sun without using the words 'hot', 'star', or 'light'.",
+    "reference_answer": "The central solar body warms our planetary system through continuous nuclear fusion at its core.",
+    "checker": {
+      "type": "forbidden_words",
+      "params": {
+        "words": ["hot", "star", "light"]
+      }
+    }
+  },
+  {
+    "id": "s044",
+    "category": "instruction_following",
+    "split": "test",
+    "prompt": "State two facts about the ocean. Each sentence must contain between 8 and 14 words.",
+    "reference_answer": "Oceans cover more than seventy percent of the total surface of our planet. Deep marine trenches harbor unique ecosystems that thrive completely without direct solar radiation.",
+    "checker": {
+      "type": "words_per_sentence",
+      "params": {
+        "min": 8,
+        "max": 14
+      }
+    }
+  },
+  {
+    "id": "s045",
+    "category": "instruction_following",
+    "split": "test",
+    "prompt": "Provide a status update on a support ticket. Your response must begin with 'RESOLUTION:'.",
+    "reference_answer": "RESOLUTION: The network interface configuration has been refreshed and normal operations are restored.",
+    "checker": {
+      "type": "starts_with",
+      "params": {
+        "prefix": "RESOLUTION:"
+      }
+    }
+  },
+  {
+    "id": "s046",
+    "category": "length_limited_summarization",
+    "split": "tune",
+    "prompt": "Write a short summary of how clouds form. It must be between 50 and 65 words in length.",
+    "reference_answer": "Clouds form when invisible water vapor in the atmosphere cools and condenses into visible water droplets or ice crystals. As warm air rises, it expands and cools, losing its capacity to hold moisture. When reaching saturation at the dew point, vapor gathers around microscopic condensation nuclei, creating billowy clouds that float across the sky.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 50,
+        "max_words": 65
+      }
+    }
+  },
+  {
+    "id": "s047",
+    "category": "length_limited_summarization",
+    "split": "tune",
+    "prompt": "Explain what photosynthesis is in exactly 20 to 35 words.",
+    "reference_answer": "Photosynthesis is the biological process by which green plants and algae convert sunlight, water, and carbon dioxide into oxygen and energy-storing sugars.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 20,
+        "max_words": 35
+      }
+    }
+  },
+  {
+    "id": "s048",
+    "category": "length_limited_summarization",
+    "split": "tune",
+    "prompt": "Summarize the water cycle in between 30 and 45 words.",
+    "reference_answer": "Solar heat evaporates surface water into atmospheric vapor, which cools and condenses into cloud droplets. Eventually this moisture precipitates back to Earth as rain or snow, replenishing oceans, rivers, and groundwater reservoirs.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 30,
+        "max_words": 45
+      }
+    }
+  },
+  {
+    "id": "s049",
+    "category": "length_limited_summarization",
+    "split": "tune",
+    "prompt": "Summarize the causes and impact of the French Revolution in 40 to 55 words.",
+    "reference_answer": "Driven by severe financial crisis, social inequality, and Enlightenment ideals, the French populace revolted in 1789 against feudal monarchy. The revolution toppled the ancient regime, established democratic republican principles, but ushered in intense political turmoil and warfare that profoundly transformed modern European governance and legal systems across the continent.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 40,
+        "max_words": 55
+      }
+    }
+  },
+  {
+    "id": "s050",
+    "category": "length_limited_summarization",
+    "split": "tune",
+    "prompt": "Explain the concept of compound interest in 25 to 40 words.",
+    "reference_answer": "Compound interest represents interest calculated both on the initial principal and on accumulated interest from previous periods, allowing invested balances to grow exponentially over time.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 40
+      }
+    }
+  },
+  {
+    "id": "s051",
+    "category": "length_limited_summarization",
+    "split": "test",
+    "prompt": "Summarize the theory of plate tectonics in 35 to 50 words.",
+    "reference_answer": "Plate tectonics explains that Earth's outer crust is divided into several rigid lithospheric plates gliding over the semi-fluid asthenosphere. Their interactions at convergent, divergent, and transform boundaries drive major geological phenomena including earthquakes, volcanic eruptions, mountain building, and continental drift.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 35,
+        "max_words": 50
+      }
+    }
+  },
+  {
+    "id": "s052",
+    "category": "length_limited_summarization",
+    "split": "test",
+    "prompt": "Explain how vaccines protect the human body in 25 to 40 words.",
+    "reference_answer": "Vaccines introduce weakened or inactive antigens into the body, prompting the immune system to produce antibodies and memory cells that neutralize future infections from the actual pathogen quickly.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 25,
+        "max_words": 40
+      }
+    }
+  },
+  {
+    "id": "s053",
+    "category": "length_limited_summarization",
+    "split": "test",
+    "prompt": "Summarize the central plot of Shakespeare's Romeo and Juliet in 30 to 45 words.",
+    "reference_answer": "In Verona, two young lovers from feuding noble families fall deeply in love and secretly marry. Tragic misunderstandings and missed messages lead both to take their own lives, finally reconciling their grieving families in sorrow.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 30,
+        "max_words": 45
+      }
+    }
+  },
+  {
+    "id": "s054",
+    "category": "length_limited_summarization",
+    "split": "test",
+    "prompt": "Explain what the greenhouse effect is in 20 to 35 words.",
+    "reference_answer": "The greenhouse effect is the natural process where atmospheric gases trap radiated solar heat, keeping planetary surface temperatures warm enough to sustain diverse biological life.",
+    "checker": {
+      "type": "word_count_range",
+      "params": {
+        "min_words": 20,
+        "max_words": 35
+      }
+    }
+  }
+]

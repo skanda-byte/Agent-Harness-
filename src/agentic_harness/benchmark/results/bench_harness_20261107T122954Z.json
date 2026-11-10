@@ -1,0 +1,384 @@
+{
+  "run_at": "20261107T122954Z",
+  "mode": "harness",
+  "total": 10,
+  "passed": 10,
+  "success_rate": 1.0,
+  "failed_attempt1": 3,
+  "recovered": 3,
+  "recovery_rate": 1.0,
+  "avg_retries": 0.3,
+  "results": [
+    {
+      "id": "s001",
+      "category": "json_validation",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"timestamp_utc\": \"2026-11-07T12:34:56Z\"\n}\n```",
+      "retries_used": 1,
+      "failed_attempt1": true,
+      "recovered": true,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\"\n}\n```",
+          "det_score": 0.0,
+          "sem_score": 0.5844,
+          "crit_score": 1.0,
+          "reliability": 0.4753,
+          "accepted": false,
+          "passed": false,
+          "det_error": "Missing required keys: ['timestamp_utc']",
+          "error": "Missing required keys: ['timestamp_utc']",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        },
+        {
+          "attempt": 2,
+          "output": "```json\n{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"timestamp_utc\": \"2026-11-07T12:34:56Z\"\n}\n```",
+          "det_score": 1.0,
+          "sem_score": 0.7802,
+          "crit_score": 1.0,
+          "reliability": 0.9341,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 21.377
+    },
+    {
+      "id": "s002",
+      "category": "json_validation",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "{\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":1960,\"genre\":\"Fiction\"}",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "{\"title\":\"To Kill a Mockingbird\",\"author\":\"Harper Lee\",\"year\":1960,\"genre\":\"Fiction\"}",
+          "det_score": 1.0,
+          "sem_score": 0.4682,
+          "crit_score": 1.0,
+          "reliability": 0.8405,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.186
+    },
+    {
+      "id": "s003",
+      "category": "numeric_answer",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "5",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "5",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.1
+    },
+    {
+      "id": "s004",
+      "category": "numeric_answer",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "91",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "91",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.858
+    },
+    {
+      "id": "s005",
+      "category": "word_count",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Clouds form when warm air rises, expands, and cools. As it cools, water vapor condenses around tiny particles, creating droplets or ice crystals. These droplets gather, grow, and become heavy enough to fall as precipitation, or they remain suspended, forming visible cloud layers. The process depends on temperature, humidity, and atmospheric pressure.",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Clouds form when warm air rises, expands, and cools. As it cools, water vapor condenses around tiny particles, creating droplets or ice crystals. These droplets gather, grow, and become heavy enough to fall as precipitation, or they remain suspended, forming visible cloud layers. The process depends on temperature, humidity, and atmospheric pressure.",
+          "det_score": 1.0,
+          "sem_score": 0.9139,
+          "crit_score": 1.0,
+          "reliability": 0.9742,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.596
+    },
+    {
+      "id": "s006",
+      "category": "word_count",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Photosynthesis is a process where plants convert sunlight, water, and carbon dioxide into glucose and oxygen, using chlorophyll to capture light energy.",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Photosynthesis is a process where plants convert sunlight, water, and carbon dioxide into glucose and oxygen, using chlorophyll to capture light energy.",
+          "det_score": 1.0,
+          "sem_score": 0.9536,
+          "crit_score": 1.0,
+          "reliability": 0.9861,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.352
+    },
+    {
+      "id": "s007",
+      "category": "regex_match",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "2026-11-07",
+      "retries_used": 1,
+      "failed_attempt1": true,
+      "recovered": true,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "2026, 11, 07",
+          "det_score": 0.0,
+          "sem_score": 0.8768,
+          "crit_score": 1.0,
+          "reliability": 0.563,
+          "accepted": false,
+          "passed": false,
+          "det_error": "Response '2026, 11, 07' does not match pattern '^\\\\d{4}-\\\\d{2}-\\\\d{2}$'.",
+          "error": "Response '2026, 11, 07' does not match pattern '^\\\\d{4}-\\\\d{2}-\\\\d{2}$'.",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        },
+        {
+          "attempt": 2,
+          "output": "2026-11-07",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 2.374
+    },
+    {
+      "id": "s008",
+      "category": "regex_match",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "192.168.1.42",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "192.168.1.42",
+          "det_score": 1.0,
+          "sem_score": 0.8767,
+          "crit_score": 1.0,
+          "reliability": 0.963,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 0.786
+    },
+    {
+      "id": "s009",
+      "category": "bullet_count",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Hydration & Energy: Water keeps your cells, tissues, and organs functioning optimally, preventing fatigue and maintaining mental clarity.  \n- Digestive Health: Adequate fluid intake aids digestion, prevents constipation, and supports the absorption of nutrients.  \n- Weight Management: Replacing sugary drinks with water reduces calorie intake, boosts metabolism slightly, and helps you feel fuller between meals.  \n- Skin & Organ Protection: Proper hydration maintains skin elasticity, reduces the appearance of wrinkles, and flushes toxins through the kidneys and liver.  \n- Temperature Regulation: Water is essential for sweating and cooling the body, helping you stay comfortable in hot or physically demanding environments.",
+      "retries_used": 1,
+      "failed_attempt1": true,
+      "recovered": true,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "**Five key benefits of drinking water every day**\n\n1. **Hydration & Energy** – Water keeps your cells, tissues, and organs functioning optimally, preventing fatigue and maintaining mental clarity.\n\n2. **Digestive Health** – Adequate fluid intake aids digestion, prevents constipation, and supports the absorption of nutrients.\n\n3. **Weight Management** – Replacing sugary drinks with water reduces calorie intake, boosts metabolism slightly, and helps you feel fuller between meals.\n\n4. **Skin & Organ Protection** – Proper hydration maintains skin elasticity, reduces the appearance of wrinkles, and flushes toxins through the kidneys and liver.\n\n5. **Temperature Regulation** – Water is essential for sweating and cooling the body, helping you stay comfortable in hot or physically demanding environments.",
+          "det_score": 0.0,
+          "sem_score": 0.544,
+          "crit_score": 1.0,
+          "reliability": 0.4632,
+          "accepted": false,
+          "passed": false,
+          "det_error": "Expected 5 bullet(s) starting with '-', found 0.",
+          "error": "Expected 5 bullet(s) starting with '-', found 0.",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        },
+        {
+          "attempt": 2,
+          "output": "- Hydration & Energy: Water keeps your cells, tissues, and organs functioning optimally, preventing fatigue and maintaining mental clarity.  \n- Digestive Health: Adequate fluid intake aids digestion, prevents constipation, and supports the absorption of nutrients.  \n- Weight Management: Replacing sugary drinks with water reduces calorie intake, boosts metabolism slightly, and helps you feel fuller between meals.  \n- Skin & Organ Protection: Proper hydration maintains skin elasticity, reduces the appearance of wrinkles, and flushes toxins through the kidneys and liver.  \n- Temperature Regulation: Water is essential for sweating and cooling the body, helping you stay comfortable in hot or physically demanding environments.",
+          "det_score": 1.0,
+          "sem_score": 0.6167,
+          "crit_score": 1.0,
+          "reliability": 0.885,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 2.898
+    },
+    {
+      "id": "s010",
+      "category": "bullet_count",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Python\n- R\n- Julia",
+      "retries_used": 0,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "- Python\n- R\n- Julia",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_s": 1.127
+    }
+  ]
+}

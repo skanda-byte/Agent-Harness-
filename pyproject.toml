@@ -1,0 +1,21 @@
+[project]
+name = "agent-harness"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "skanda-byte", email = "skandahs73@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.2.0",
+]
+
+[project.scripts]
+agent-harness = "agent_harness:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"

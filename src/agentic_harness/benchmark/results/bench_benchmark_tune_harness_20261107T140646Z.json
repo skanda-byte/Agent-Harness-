@@ -1,0 +1,1169 @@
+{
+  "run_at": "20261107T140646Z",
+  "suite": "benchmark",
+  "split": "tune",
+  "mode": "harness",
+  "total": 32,
+  "passed": 32,
+  "success_rate": 1.0,
+  "failed_attempt1": 0,
+  "recovered": 0,
+  "recovery_rate": null,
+  "avg_retries": 0.0,
+  "cache_hits": 18,
+  "avg_latency_ms": 1770.22,
+  "results": [
+    {
+      "id": "s001",
+      "category": "json_extraction",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "{\"name\":\"John Doe\",\"email\":\"john.doe@example.com\",\"age\":30}",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "{\"name\":\"John Doe\",\"email\":\"john.doe@example.com\",\"age\":30}",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 18818.2,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 18818.2,
+      "latency_s": 18.818
+    },
+    {
+      "id": "s002",
+      "category": "json_extraction",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "{\"title\":\"The Great Gatsby\",\"author\":\"F. Scott Fitzgerald\",\"year\":1925,\"genre\":\"Novel\"}",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "{\"title\":\"The Great Gatsby\",\"author\":\"F. Scott Fitzgerald\",\"year\":1925,\"genre\":\"Novel\"}",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 0.9111,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 34.32,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 34.32,
+      "latency_s": 0.034
+    },
+    {
+      "id": "s003",
+      "category": "json_extraction",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"host\": \"example.com\",\n  \"port\": 443,\n  \"protocol\": \"https\"\n}\n```",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"host\": \"example.com\",\n  \"port\": 443,\n  \"protocol\": \"https\"\n}\n```",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 60.09,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 60.09,
+      "latency_s": 0.06
+    },
+    {
+      "id": "s004",
+      "category": "json_extraction",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"sku\": \"ABC123\",\n  \"name\": \"Wireless Mouse\",\n  \"price\": 29.99,\n  \"stock\": 150\n}\n```",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"sku\": \"ABC123\",\n  \"name\": \"Wireless Mouse\",\n  \"price\": 29.99,\n  \"stock\": 150\n}\n```",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 27.6,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 27.6,
+      "latency_s": 0.028
+    },
+    {
+      "id": "s005",
+      "category": "json_extraction",
+      "mode": "harness",
+      "checker_type": "valid_json_with_keys",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"flight_number\": \"AB123\",\n  \"origin\": \"New York (JFK)\",\n  \"destination\": \"London (LHR)\",\n  \"seat\": \"12A\"\n}\n```",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"flight_number\": \"AB123\",\n  \"origin\": \"New York (JFK)\",\n  \"destination\": \"London (LHR)\",\n  \"seat\": \"12A\"\n}\n```",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 30.63,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 30.63,
+      "latency_s": 0.031
+    },
+    {
+      "id": "s010",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "5",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "5",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 47.95,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 47.95,
+      "latency_s": 0.048
+    },
+    {
+      "id": "s011",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "91",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "91",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 46.6,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 46.6,
+      "latency_s": 0.047
+    },
+    {
+      "id": "s012",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "17",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "17",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 45.76,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 45.76,
+      "latency_s": 0.046
+    },
+    {
+      "id": "s013",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "150",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "150",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 55.62,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 55.62,
+      "latency_s": 0.056
+    },
+    {
+      "id": "s014",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "64",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "64",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 46.22,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 46.22,
+      "latency_s": 0.046
+    },
+    {
+      "id": "s015",
+      "category": "arithmetic_word_problems",
+      "mode": "harness",
+      "checker_type": "numeric_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "96",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "96",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 152.98,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 152.98,
+      "latency_s": 0.153
+    },
+    {
+      "id": "s019",
+      "category": "format_constraints",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "2026-11-07",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "2026-11-07",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 89.9,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 89.9,
+      "latency_s": 0.09
+    },
+    {
+      "id": "s020",
+      "category": "format_constraints",
+      "mode": "harness",
+      "checker_type": "regex_match",
+      "passed": true,
+      "error_message": "",
+      "final_output": "192.168.1.42",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "192.168.1.42",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 36.03,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 36.03,
+      "latency_s": 0.036
+    },
+    {
+      "id": "s021",
+      "category": "format_constraints",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Helps maintain proper hydration and supports overall bodily functions  \n- Aids digestion and prevents constipation by keeping the digestive tract moving smoothly  \n- Promotes clearer skin by flushing out toxins and keeping skin cells hydrated  \n- Supports healthy kidney function, reducing the risk of kidney stones and urinary tract infections  \n- Boosts energy levels and improves concentration by preventing dehydration-related fatigue and brain fog",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "- Helps maintain proper hydration and supports overall bodily functions  \n- Aids digestion and prevents constipation by keeping the digestive tract moving smoothly  \n- Promotes clearer skin by flushing out toxins and keeping skin cells hydrated  \n- Supports healthy kidney function, reducing the risk of kidney stones and urinary tract infections  \n- Boosts energy levels and improves concentration by preventing dehydration-related fatigue and brain fog",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 73.34,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 73.34,
+      "latency_s": 0.073
+    },
+    {
+      "id": "s022",
+      "category": "format_constraints",
+      "mode": "harness",
+      "checker_type": "exact_bullet_count",
+      "passed": true,
+      "error_message": "",
+      "final_output": "* Python\n* R\n* Julia",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "* Python\n* R\n* Julia",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 27.78,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 27.78,
+      "latency_s": 0.028
+    },
+    {
+      "id": "s023",
+      "category": "format_constraints",
+      "mode": "harness",
+      "checker_type": "no_commas",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Exercise strengthens muscles and improves cardiovascular health. It boosts mood by releasing endorphins and reduces stress. Regular activity helps maintain a healthy weight and supports bone density. Staying active also improves sleep quality and increases overall energy levels.",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Exercise strengthens muscles and improves cardiovascular health. It boosts mood by releasing endorphins and reduces stress. Regular activity helps maintain a healthy weight and supports bone density. Staying active also improves sleep quality and increases overall energy levels.",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 31.58,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 31.58,
+      "latency_s": 0.032
+    },
+    {
+      "id": "s028",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The chemical formula of water is **H2O**. It is composed of the two elements hydrogen and oxygen.",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The chemical formula of water is **H2O**. It is composed of the two elements hydrogen and oxygen.",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 30.06,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 30.06,
+      "latency_s": 0.03
+    },
+    {
+      "id": "s029",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Albert Einstein developed the theory of general relativity, and it was published in 1915.",
+      "retries_used": 0,
+      "cache_hit": true,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Albert Einstein developed the theory of general relativity, and it was published in 1915.",
+          "det_score": 1.0,
+          "sem_score": 1.0,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": true,
+          "latency_ms": 31.64,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": "Served from cache"
+          }
+        }
+      ],
+      "latency_ms": 31.64,
+      "latency_s": 0.032
+    },
+    {
+      "id": "s030",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The capital city of Japan is **Tokyo**, and it is located on the main island of **Honshu**.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The capital city of Japan is **Tokyo**, and it is located on the main island of **Honshu**.",
+          "det_score": 1.0,
+          "sem_score": 0.9097,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 2529.56,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 2626.35,
+      "latency_s": 2.626
+    },
+    {
+      "id": "s031",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The process is **photosynthesis**, and the green pigment that captures sunlight to drive it is **chlorophyll**.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The process is **photosynthesis**, and the green pigment that captures sunlight to drive it is **chlorophyll**.",
+          "det_score": 1.0,
+          "sem_score": 0.75,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1265.79,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1680.86,
+      "latency_s": 1.681
+    },
+    {
+      "id": "s032",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The planet is **Mars**.  \nIts reddish hue comes mainly from **iron oxide (rust)**—tiny iron‑oxide particles in its surface dust and rocks give the planet its characteristic red color.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The planet is **Mars**.  \nIts reddish hue comes mainly from **iron oxide (rust)**—tiny iron‑oxide particles in its surface dust and rocks give the planet its characteristic red color.",
+          "det_score": 1.0,
+          "sem_score": 0.8013,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1211.54,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1257.51,
+      "latency_s": 1.258
+    },
+    {
+      "id": "s033",
+      "category": "factual_qa",
+      "mode": "harness",
+      "checker_type": "contains_all",
+      "passed": true,
+      "error_message": "",
+      "final_output": "**Largest living mammal:**  \n- **Blue whale (*Balaenoptera musculus*)** – the biggest animal that has ever lived, reaching lengths of up to ~30 m (100 ft) and weights of ~180 t (200 tons).\n\n**Habitat:**  \n- **Marine environment** – blue whales are fully aquatic and are found in all of the world’s oceans, from the Arctic to the Southern Ocean.  \n- They prefer **open ocean** (pelagic) waters, often at depths of 200–1,000 m, but they also migrate to shallower coastal areas during breeding and calving seasons.  \n- Their distribution is largely driven by the abundance of their primary food source, **krill** (small shrimp‑like crustaceans), which is plentiful in cold, nutrient‑rich waters.  \n\nSo, the blue whale lives in the global ocean, moving between deep‑water feeding grounds and coastal breeding sites.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "**Largest living mammal:**  \n- **Blue whale (*Balaenoptera musculus*)** – the biggest animal that has ever lived, reaching lengths of up to ~30 m (100 ft) and weights of ~180 t (200 tons).\n\n**Habitat:**  \n- **Marine environment** – blue whales are fully aquatic and are found in all of the world’s oceans, from the Arctic to the Southern Ocean.  \n- They prefer **open ocean** (pelagic) waters, often at depths of 200–1,000 m, but they also migrate to shallower coastal areas during breeding and calving seasons.  \n- Their distribution is largely driven by the abundance of their primary food source, **krill** (small shrimp‑like crustaceans), which is plentiful in cold, nutrient‑rich waters.  \n\nSo, the blue whale lives in the global ocean, moving between deep‑water feeding grounds and coastal breeding sites.",
+          "det_score": 1.0,
+          "sem_score": 0.8013,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1283.19,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1335.8,
+      "latency_s": 1.336
+    },
+    {
+      "id": "s037",
+      "category": "instruction_following",
+      "mode": "harness",
+      "checker_type": "starts_with",
+      "passed": true,
+      "error_message": "",
+      "final_output": "ANSWER: Gravity is the force that attracts objects with mass toward each other.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "ANSWER: Gravity is the force that attracts objects with mass toward each other.",
+          "det_score": 1.0,
+          "sem_score": 0.9041,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1088.93,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1130.2,
+      "latency_s": 1.13
+    },
+    {
+      "id": "s038",
+      "category": "instruction_following",
+      "mode": "harness",
+      "checker_type": "forbidden_words",
+      "passed": true,
+      "error_message": "",
+      "final_output": "A rider sits on a lightweight frame that holds a seat, handlebars, and a set of metal links called a chain. The rider’s legs push on two rotating arms—called cranks—that are attached to a front gear (the chainring). When the cranks turn, the chain wraps around the chainring and a set of smaller gears on the rear axle (the cassette). The chain’s motion drives the rear tire, causing it to spin and push the rider forward.\n\nThe front tire is mounted on a fork that pivots around a central axle. Turning the handlebars changes the angle of this axle, steering the front tire left or right. The rider balances by keeping the two tires in motion; the spinning tires create a gyroscopic effect that resists tilting, while the rider’s body weight shifts to maintain equilibrium.\n\nBrakes are mounted on both axles. When the rider squeezes the brake levers, friction pads clamp onto the rims or discs, slowing the tires and eventually stopping the frame. Gears on the cassette allow the rider to adjust the mechanical advantage: lower gears give more torque for climbing or accelerating, while higher gears reduce effort for maintaining speed on flat ground.\n\nIn short, the rider’s leg power turns the cranks, the chain transmits that power to the rear tire, the front tire steers, and the frame keeps everything together while the rider balances and controls speed with brakes and gear changes.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "A rider sits on a lightweight frame that holds a seat, handlebars, and a set of metal links called a chain. The rider’s legs push on two rotating arms—called cranks—that are attached to a front gear (the chainring). When the cranks turn, the chain wraps around the chainring and a set of smaller gears on the rear axle (the cassette). The chain’s motion drives the rear tire, causing it to spin and push the rider forward.\n\nThe front tire is mounted on a fork that pivots around a central axle. Turning the handlebars changes the angle of this axle, steering the front tire left or right. The rider balances by keeping the two tires in motion; the spinning tires create a gyroscopic effect that resists tilting, while the rider’s body weight shifts to maintain equilibrium.\n\nBrakes are mounted on both axles. When the rider squeezes the brake levers, friction pads clamp onto the rims or discs, slowing the tires and eventually stopping the frame. Gears on the cassette allow the rider to adjust the mechanical advantage: lower gears give more torque for climbing or accelerating, while higher gears reduce effort for maintaining speed on flat ground.\n\nIn short, the rider’s leg power turns the cranks, the chain transmits that power to the rear tire, the front tire steers, and the frame keeps everything together while the rider balances and controls speed with brakes and gear changes.",
+          "det_score": 1.0,
+          "sem_score": 0.5742,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 2863.0,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 2904.53,
+      "latency_s": 2.905
+    },
+    {
+      "id": "s039",
+      "category": "instruction_following",
+      "mode": "harness",
+      "checker_type": "words_per_sentence",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Practice your speech aloud, recording yourself to refine pacing, tone, and body language.  \nEngage the audience with eye contact, varied vocal dynamics, and clear, concise messaging.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Practice your speech aloud, recording yourself to refine pacing, tone, and body language.  \nEngage the audience with eye contact, varied vocal dynamics, and clear, concise messaging.",
+          "det_score": 1.0,
+          "sem_score": 0.739,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1452.56,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1496.7,
+      "latency_s": 1.497
+    },
+    {
+      "id": "s040",
+      "category": "instruction_following",
+      "mode": "harness",
+      "checker_type": "starts_with",
+      "passed": true,
+      "error_message": "",
+      "final_output": "CONFIRMED: Message received.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "CONFIRMED: Message received.",
+          "det_score": 1.0,
+          "sem_score": 0.7337,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1006.59,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1043.32,
+      "latency_s": 1.043
+    },
+    {
+      "id": "s041",
+      "category": "instruction_following",
+      "mode": "harness",
+      "checker_type": "forbidden_words",
+      "passed": true,
+      "error_message": "",
+      "final_output": "An algorithm is a clear, step‑by‑step recipe that tells you exactly what to do to reach a goal or solve a problem.  \nThink of it like a cooking recipe: it lists the ingredients, the order in which you add them, the timing, and the final result.  \nJust as a recipe can be followed by a chef, an algorithm can be followed by a person, a machine, or any system that can carry out instructions.\n\nKey features of an algorithm:\n\n| Feature | What it means |\n|---------|---------------|\n| **Well‑defined steps** | Each instruction is precise and unambiguous. |\n| **Finite** | It will finish after a certain number of steps. |\n| **Input and output** | It takes some starting information and produces a result. |\n| **Deterministic** | The same input always leads to the same output. |\n\nExamples in everyday life:\n\n- **Making a sandwich**: gather bread, spread butter, add fillings, close the sandwich, cut it.  \n- **Finding a route**: start at point A, look at the map, choose the shortest path, follow it to point B.  \n- **Sorting a list of names**: compare the first two, swap if necessary, move to the next pair, repeat until the list is ordered.\n\nAlgorithms can be written in many ways: in plain language, in diagrams (flowcharts), or in a formal mathematical notation. They are the backbone of everything from simple household chores to complex scientific calculations, because they provide a reliable, repeatable way to get from a problem to a solution.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "An algorithm is a clear, step‑by‑step recipe that tells you exactly what to do to reach a goal or solve a problem.  \nThink of it like a cooking recipe: it lists the ingredients, the order in which you add them, the timing, and the final result.  \nJust as a recipe can be followed by a chef, an algorithm can be followed by a person, a machine, or any system that can carry out instructions.\n\nKey features of an algorithm:\n\n| Feature | What it means |\n|---------|---------------|\n| **Well‑defined steps** | Each instruction is precise and unambiguous. |\n| **Finite** | It will finish after a certain number of steps. |\n| **Input and output** | It takes some starting information and produces a result. |\n| **Deterministic** | The same input always leads to the same output. |\n\nExamples in everyday life:\n\n- **Making a sandwich**: gather bread, spread butter, add fillings, close the sandwich, cut it.  \n- **Finding a route**: start at point A, look at the map, choose the shortest path, follow it to point B.  \n- **Sorting a list of names**: compare the first two, swap if necessary, move to the next pair, repeat until the list is ordered.\n\nAlgorithms can be written in many ways: in plain language, in diagrams (flowcharts), or in a formal mathematical notation. They are the backbone of everything from simple household chores to complex scientific calculations, because they provide a reliable, repeatable way to get from a problem to a solution.",
+          "det_score": 1.0,
+          "sem_score": 0.697,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 6054.01,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 6101.88,
+      "latency_s": 6.102
+    },
+    {
+      "id": "s046",
+      "category": "length_limited_summarization",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Clouds begin when warm air rises, carrying moisture from oceans, lakes, or land. As the air ascends, it cools and water vapor condenses around tiny particles like dust or pollen, forming microscopic droplets or ice crystals. These droplets cluster, grow, and, once heavy enough, fall as precipitation, while lighter ones remain suspended, creating visible cloud formations.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Clouds begin when warm air rises, carrying moisture from oceans, lakes, or land. As the air ascends, it cools and water vapor condenses around tiny particles like dust or pollen, forming microscopic droplets or ice crystals. These droplets cluster, grow, and, once heavy enough, fall as precipitation, while lighter ones remain suspended, creating visible cloud formations.",
+          "det_score": 1.0,
+          "sem_score": 0.8789,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 9642.61,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 9686.27,
+      "latency_s": 9.686
+    },
+    {
+      "id": "s047",
+      "category": "length_limited_summarization",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Photosynthesis is a process where green plants convert sunlight, water, and carbon dioxide into glucose and oxygen, sustaining life on Earth.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Photosynthesis is a process where green plants convert sunlight, water, and carbon dioxide into glucose and oxygen, sustaining life on Earth.",
+          "det_score": 1.0,
+          "sem_score": 0.9504,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 3338.86,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 3439.37,
+      "latency_s": 3.439
+    },
+    {
+      "id": "s048",
+      "category": "length_limited_summarization",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The water cycle describes how water evaporates from oceans, lakes, and soil, condenses into clouds, precipitates as rain or snow, infiltrates ground, flows in rivers, and returns to the atmosphere, sustaining life.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The water cycle describes how water evaporates from oceans, lakes, and soil, condenses into clouds, precipitates as rain or snow, infiltrates ground, flows in rivers, and returns to the atmosphere, sustaining life.",
+          "det_score": 1.0,
+          "sem_score": 0.6397,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1347.96,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1389.79,
+      "latency_s": 1.39
+    },
+    {
+      "id": "s049",
+      "category": "length_limited_summarization",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The French Revolution erupted in 1789 due to widespread discontent with absolute monarchy, fiscal crisis, Enlightenment ideas, and social inequality. Its impact reshaped France, abolishing feudal privileges, establishing republican ideals, inspiring nationalist movements, and provoking wars that spread revolutionary principles across Europe.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The French Revolution erupted in 1789 due to widespread discontent with absolute monarchy, fiscal crisis, Enlightenment ideas, and social inequality. Its impact reshaped France, abolishing feudal privileges, establishing republican ideals, inspiring nationalist movements, and provoking wars that spread revolutionary principles across Europe.",
+          "det_score": 1.0,
+          "sem_score": 0.8518,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1314.68,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1403.12,
+      "latency_s": 1.403
+    },
+    {
+      "id": "s050",
+      "category": "length_limited_summarization",
+      "mode": "harness",
+      "checker_type": "word_count_range",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Compound interest is the process where earned interest is reinvested, generating additional interest over time. This exponential growth boosts returns, making savings and investments grow faster than simple interest.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Compound interest is the process where earned interest is reinvested, generating additional interest over time. This exponential growth boosts returns, making savings and investments grow faster than simple interest.",
+          "det_score": 1.0,
+          "sem_score": 0.8774,
+          "crit_score": 1.0,
+          "reliability": 1.0,
+          "accepted": true,
+          "passed": true,
+          "det_error": "",
+          "error": "",
+          "cache_hit": false,
+          "latency_ms": 1424.75,
+          "critic": {
+            "score": 1.0,
+            "issues": [],
+            "suggestion": ""
+          }
+        }
+      ],
+      "latency_ms": 1465.11,
+      "latency_s": 1.465
+    }
+  ]
+}

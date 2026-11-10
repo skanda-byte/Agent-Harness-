@@ -1,0 +1,523 @@
+{
+  "run_at": "20261107T140829Z",
+  "suite": "benchmark",
+  "split": "test",
+  "mode": "baseline",
+  "total": 22,
+  "passed": 20,
+  "success_rate": 0.9091,
+  "failed_attempt1": 2,
+  "recovered": 0,
+  "recovery_rate": 0.0,
+  "avg_retries": 0.0,
+  "cache_hits": 0,
+  "avg_latency_ms": 717.78,
+  "results": [
+    {
+      "id": "s006",
+      "category": "json_extraction",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"city\": \"San Francisco\",\n  \"temperature\": 18,\n  \"humidity\": 72,\n  \"condition\": \"Partly cloudy\"\n}\n```",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"city\": \"San Francisco\",\n  \"temperature\": 18,\n  \"humidity\": 72,\n  \"condition\": \"Partly cloudy\"\n}\n```",
+          "passed": true,
+          "error": "",
+          "latency_ms": 2185.78
+        }
+      ],
+      "latency_ms": 2185.78,
+      "latency_s": 2.186
+    },
+    {
+      "id": "s007",
+      "category": "json_extraction",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"employee_id\": \"E12345\",\n  \"salary\": 75000,\n  \"department\": \"Engineering\"\n}\n```",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"employee_id\": \"E12345\",\n  \"salary\": 75000,\n  \"department\": \"Engineering\"\n}\n```",
+          "passed": true,
+          "error": "",
+          "latency_ms": 591.3
+        }
+      ],
+      "latency_ms": 591.3,
+      "latency_s": 0.591
+    },
+    {
+      "id": "s008",
+      "category": "json_extraction",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"dish_name\": \"Spaghetti Carbonara\",\n  \"prep_time_minutes\": 20,\n  \"ingredients\": [\n    \"200g spaghetti\",\n    \"100g pancetta or bacon, diced\",\n    \"2 large eggs\",\n    \"50g grated Pecorino Romano cheese\",\n    \"50g grated Parmesan cheese\",\n    \"2 cloves garlic, minced\",\n    \"Salt and freshly ground black pepper\",\n    \"Fresh parsley, chopped (optional garnish)\"\n  ]\n}\n```",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"dish_name\": \"Spaghetti Carbonara\",\n  \"prep_time_minutes\": 20,\n  \"ingredients\": [\n    \"200g spaghetti\",\n    \"100g pancetta or bacon, diced\",\n    \"2 large eggs\",\n    \"50g grated Pecorino Romano cheese\",\n    \"50g grated Parmesan cheese\",\n    \"2 cloves garlic, minced\",\n    \"Salt and freshly ground black pepper\",\n    \"Fresh parsley, chopped (optional garnish)\"\n  ]\n}\n```",
+          "passed": true,
+          "error": "",
+          "latency_ms": 670.61
+        }
+      ],
+      "latency_ms": 670.61,
+      "latency_s": 0.671
+    },
+    {
+      "id": "s009",
+      "category": "json_extraction",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "```json\n{\n  \"transaction_id\": \"TXN-20261107-001\",\n  \"amount\": 150.75,\n  \"currency\": \"USD\",\n  \"status\": \"completed\"\n}\n```",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "```json\n{\n  \"transaction_id\": \"TXN-20261107-001\",\n  \"amount\": 150.75,\n  \"currency\": \"USD\",\n  \"status\": \"completed\"\n}\n```",
+          "passed": true,
+          "error": "",
+          "latency_ms": 450.49
+        }
+      ],
+      "latency_ms": 450.49,
+      "latency_s": 0.45
+    },
+    {
+      "id": "s016",
+      "category": "arithmetic_word_problems",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "8",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "8",
+          "passed": true,
+          "error": "",
+          "latency_ms": 282.42
+        }
+      ],
+      "latency_ms": 282.42,
+      "latency_s": 0.282
+    },
+    {
+      "id": "s017",
+      "category": "arithmetic_word_problems",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "5",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "5",
+          "passed": true,
+          "error": "",
+          "latency_ms": 1113.66
+        }
+      ],
+      "latency_ms": 1113.66,
+      "latency_s": 1.114
+    },
+    {
+      "id": "s018",
+      "category": "arithmetic_word_problems",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "32",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "32",
+          "passed": true,
+          "error": "",
+          "latency_ms": 524.06
+        }
+      ],
+      "latency_ms": 524.06,
+      "latency_s": 0.524
+    },
+    {
+      "id": "s024",
+      "category": "format_constraints",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Mars is the fourth planet from the Sun, known for its reddish appearance due to iron oxide on its surface. It has a thin atmosphere composed mainly of carbon dioxide, with surface temperatures that can drop below –125 °C during winter. The planet hosts the largest volcano, Olympus Mons, and the deepest canyon, Valles Marineris, making it a fascinating subject for planetary science.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Mars is the fourth planet from the Sun, known for its reddish appearance due to iron oxide on its surface. It has a thin atmosphere composed mainly of carbon dioxide, with surface temperatures that can drop below –125 °C during winter. The planet hosts the largest volcano, Olympus Mons, and the deepest canyon, Valles Marineris, making it a fascinating subject for planetary science.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 775.35
+        }
+      ],
+      "latency_ms": 775.35,
+      "latency_s": 0.775
+    },
+    {
+      "id": "s025",
+      "category": "format_constraints",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "- Spring  \n- Summer  \n- Autumn  \n- Winter",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "- Spring  \n- Summer  \n- Autumn  \n- Winter",
+          "passed": true,
+          "error": "",
+          "latency_ms": 604.32
+        }
+      ],
+      "latency_ms": 604.32,
+      "latency_s": 0.604
+    },
+    {
+      "id": "s026",
+      "category": "format_constraints",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "K1A 0B1",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "K1A 0B1",
+          "passed": true,
+          "error": "",
+          "latency_ms": 402.6
+        }
+      ],
+      "latency_ms": 402.6,
+      "latency_s": 0.403
+    },
+    {
+      "id": "s027",
+      "category": "format_constraints",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "#4A7D9C",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "#4A7D9C",
+          "passed": true,
+          "error": "",
+          "latency_ms": 678.39
+        }
+      ],
+      "latency_ms": 678.39,
+      "latency_s": 0.678
+    },
+    {
+      "id": "s034",
+      "category": "factual_qa",
+      "mode": "baseline",
+      "passed": false,
+      "error_message": "Missing required words/phrases: ['78%']",
+      "final_output": "The most abundant gas in Earth’s atmosphere is **nitrogen (N₂)**, making up roughly **78 %** of the air by volume.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": true,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The most abundant gas in Earth’s atmosphere is **nitrogen (N₂)**, making up roughly **78 %** of the air by volume.",
+          "passed": false,
+          "error": "Missing required words/phrases: ['78%']",
+          "latency_ms": 563.14
+        }
+      ],
+      "latency_ms": 563.14,
+      "latency_s": 0.563
+    },
+    {
+      "id": "s035",
+      "category": "factual_qa",
+      "mode": "baseline",
+      "passed": false,
+      "error_message": "Missing required words/phrases: ['Tim Berners-Lee']",
+      "final_output": "The World Wide Web was invented by **Sir Tim Berners‑Lee** while he was working at **CERN (the European Organization for Nuclear Research) in Geneva, Switzerland**.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": true,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The World Wide Web was invented by **Sir Tim Berners‑Lee** while he was working at **CERN (the European Organization for Nuclear Research) in Geneva, Switzerland**.",
+          "passed": false,
+          "error": "Missing required words/phrases: ['Tim Berners-Lee']",
+          "latency_ms": 615.27
+        }
+      ],
+      "latency_ms": 615.27,
+      "latency_s": 0.615
+    },
+    {
+      "id": "s036",
+      "category": "factual_qa",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The United Kingdom’s official currency is the **pound sterling (£)**.  \nBanknotes in England and Wales are issued by the **Bank of England** (the UK’s central bank).",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The United Kingdom’s official currency is the **pound sterling (£)**.  \nBanknotes in England and Wales are issued by the **Bank of England** (the UK’s central bank).",
+          "passed": true,
+          "error": "",
+          "latency_ms": 708.58
+        }
+      ],
+      "latency_ms": 708.58,
+      "latency_s": 0.709
+    },
+    {
+      "id": "s042",
+      "category": "instruction_following",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "GREETINGS: Dear Attendee, it is with great pleasure that we welcome you to this distinguished gathering. We trust that your participation will enrich the discourse and contribute to the success of our collective endeavors.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "GREETINGS: Dear Attendee, it is with great pleasure that we welcome you to this distinguished gathering. We trust that your participation will enrich the discourse and contribute to the success of our collective endeavors.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 487.6
+        }
+      ],
+      "latency_ms": 487.6,
+      "latency_s": 0.488
+    },
+    {
+      "id": "s043",
+      "category": "instruction_following",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The sun is a colossal sphere of glowing plasma that dominates the sky. Its surface, a shimmering layer of ionized gases, constantly churns with swirling convection cells and magnetic storms. When it erupts, it sends out powerful bursts of radiation and charged particles that travel across the solar system, shaping the space environment around Earth. The sun’s immense gravity keeps the planets in orbit, while its steady output of energy sustains life, drives weather patterns, and powers the planet’s magnetic field. From dawn to dusk, it casts a brilliant, golden glow that paints the horizon and signals the passage of time. Its presence is felt in the warmth that rises on a clear day, the gentle hum of the atmosphere, and the rhythmic cycle of seasons that depend on its steady, inexorable influence.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The sun is a colossal sphere of glowing plasma that dominates the sky. Its surface, a shimmering layer of ionized gases, constantly churns with swirling convection cells and magnetic storms. When it erupts, it sends out powerful bursts of radiation and charged particles that travel across the solar system, shaping the space environment around Earth. The sun’s immense gravity keeps the planets in orbit, while its steady output of energy sustains life, drives weather patterns, and powers the planet’s magnetic field. From dawn to dusk, it casts a brilliant, golden glow that paints the horizon and signals the passage of time. Its presence is felt in the warmth that rises on a clear day, the gentle hum of the atmosphere, and the rhythmic cycle of seasons that depend on its steady, inexorable influence.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 875.84
+        }
+      ],
+      "latency_ms": 875.84,
+      "latency_s": 0.876
+    },
+    {
+      "id": "s044",
+      "category": "instruction_following",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The ocean covers more than 70 percent of Earth's surface.  \nDeepest ocean trench, Mariana Trench, reaches nearly 11,000 meters deep.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The ocean covers more than 70 percent of Earth's surface.  \nDeepest ocean trench, Mariana Trench, reaches nearly 11,000 meters deep.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 368.22
+        }
+      ],
+      "latency_ms": 368.22,
+      "latency_s": 0.368
+    },
+    {
+      "id": "s045",
+      "category": "instruction_following",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "RESOLUTION:  \nYour support ticket (ID: 123456) has been reviewed by our technical team. We have identified the root cause of the connectivity issue and are currently applying the necessary configuration changes. The expected resolution time is within the next 2 business hours. We will notify you immediately once the issue is fully resolved. If you have any additional information or questions in the meantime, please reply to this ticket or contact our support hotline at 1‑800‑555‑1234. Thank you for your patience.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "RESOLUTION:  \nYour support ticket (ID: 123456) has been reviewed by our technical team. We have identified the root cause of the connectivity issue and are currently applying the necessary configuration changes. The expected resolution time is within the next 2 business hours. We will notify you immediately once the issue is fully resolved. If you have any additional information or questions in the meantime, please reply to this ticket or contact our support hotline at 1‑800‑555‑1234. Thank you for your patience.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 779.29
+        }
+      ],
+      "latency_ms": 779.29,
+      "latency_s": 0.779
+    },
+    {
+      "id": "s051",
+      "category": "length_limited_summarization",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Plate tectonics explains Earth's lithosphere as rigid plates moving over the asthenosphere, driven by mantle convection, slab pull, and ridge push. Their interactions—convergent, divergent, transform—create mountains, earthquakes, volcanoes, and oceanic trenches, reshaping continents over geological time.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Plate tectonics explains Earth's lithosphere as rigid plates moving over the asthenosphere, driven by mantle convection, slab pull, and ridge push. Their interactions—convergent, divergent, transform—create mountains, earthquakes, volcanoes, and oceanic trenches, reshaping continents over geological time.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 965.53
+        }
+      ],
+      "latency_ms": 965.53,
+      "latency_s": 0.966
+    },
+    {
+      "id": "s052",
+      "category": "length_limited_summarization",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Vaccines introduce harmless antigens, prompting the immune system to produce memory cells and antibodies that recognize and neutralize the real pathogen, preventing illness upon future exposure.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Vaccines introduce harmless antigens, prompting the immune system to produce memory cells and antibodies that recognize and neutralize the real pathogen, preventing illness upon future exposure.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 771.35
+        }
+      ],
+      "latency_ms": 771.35,
+      "latency_s": 0.771
+    },
+    {
+      "id": "s053",
+      "category": "length_limited_summarization",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "Romeo, a Montague, falls in love with Juliet, a Capulet, despite their families’ feud. Their secret marriage sparks misunderstandings, leading to both lovers’ tragic deaths and ultimately reconciling the warring households.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "Romeo, a Montague, falls in love with Juliet, a Capulet, despite their families’ feud. Their secret marriage sparks misunderstandings, leading to both lovers’ tragic deaths and ultimately reconciling the warring households.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 559.01
+        }
+      ],
+      "latency_ms": 559.01,
+      "latency_s": 0.559
+    },
+    {
+      "id": "s054",
+      "category": "length_limited_summarization",
+      "mode": "baseline",
+      "passed": true,
+      "error_message": "",
+      "final_output": "The greenhouse effect is the warming of Earth’s surface caused by atmospheric gases trapping heat radiated from the planet, preventing it from escaping into space, and maintaining habitable temperatures.",
+      "retries_used": 0,
+      "cache_hit": false,
+      "failed_attempt1": false,
+      "recovered": false,
+      "history": [
+        {
+          "attempt": 1,
+          "output": "The greenhouse effect is the warming of Earth’s surface caused by atmospheric gases trapping heat radiated from the planet, preventing it from escaping into space, and maintaining habitable temperatures.",
+          "passed": true,
+          "error": "",
+          "latency_ms": 818.46
+        }
+      ],
+      "latency_ms": 818.46,
+      "latency_s": 0.818
+    }
+  ]
+}
